@@ -1,1 +1,1 @@
-export { TitleScreen } from "./components/TitleScreen";
+export { TitleScreen } from "./components/title-screen/title-screen";

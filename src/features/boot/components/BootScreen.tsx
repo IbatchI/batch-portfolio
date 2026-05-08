@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { portfolioData } from "@/src/config/portfolio-data";
+import { portfolioData } from "@/src/features/shared/lib/portfolio-data";
 
 interface BootScreenProps {
   onComplete: () => void;
