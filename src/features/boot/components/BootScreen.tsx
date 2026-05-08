@@ -3,6 +3,20 @@
 import { useState, useEffect } from "react";
 import { portfolioData } from "@/src/features/shared/lib/portfolio-data";
 
+const BOOT_MESSAGE_DELAYS = {
+  INIT: 0,
+  MODULES: 400,
+  STACK: 800,
+  PORTFOLIO: 1200,
+} as const;
+
+const PROGRESS_BAR = {
+  INTERVAL_MS: 30,
+  STEP: 2,
+  COLOR_SPLIT: 60,
+  COMPLETE_DELAY_MS: 500,
+} as const;
+
 interface BootScreenProps {
   onComplete: () => void;
 }
@@ -13,10 +27,10 @@ export function BootScreen({ onComplete }: BootScreenProps) {
   const [showProgress, setShowProgress] = useState(false);
 
   const bootMessages = [
-    { text: `LUCAS.EXE ${portfolioData.version} — INITIALIZING...`, color: "text-primary", delay: 0 },
-    { text: "[ OK ] Frontend modules loaded", color: "text-muted-foreground", delay: 400 },
-    { text: "[ OK ] React · Next.js · TypeScript", color: "text-muted-foreground", delay: 800 },
-    { text: "Loading portfolio data...", color: "text-secondary", delay: 1200 },
+    { text: `LUCAS.EXE ${portfolioData.version} — INITIALIZING...`, color: "text-primary", delay: BOOT_MESSAGE_DELAYS.INIT },
+    { text: "[ OK ] Frontend modules loaded", color: "text-muted-foreground", delay: BOOT_MESSAGE_DELAYS.MODULES },
+    { text: "[ OK ] React · Next.js · TypeScript", color: "text-muted-foreground", delay: BOOT_MESSAGE_DELAYS.STACK },
+    { text: "Loading portfolio data...", color: "text-secondary", delay: BOOT_MESSAGE_DELAYS.PORTFOLIO },
   ];
 
   useEffect(() => {
@@ -37,12 +51,12 @@ export function BootScreen({ onComplete }: BootScreenProps) {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
-          setTimeout(onComplete, 500);
+          setTimeout(onComplete, PROGRESS_BAR.COMPLETE_DELAY_MS);
           return 100;
         }
-        return prev + 2;
+        return prev + PROGRESS_BAR.STEP;
       });
-    }, 30);
+    }, PROGRESS_BAR.INTERVAL_MS);
 
     return () => clearInterval(interval);
   }, [showProgress, onComplete]);
@@ -76,11 +90,11 @@ export function BootScreen({ onComplete }: BootScreenProps) {
               <div className="h-full flex">
                 <div
                   className="h-full bg-success transition-all duration-75"
-                  style={{ width: `${Math.min(progress, 60)}%` }}
+                  style={{ width: `${Math.min(progress, PROGRESS_BAR.COLOR_SPLIT)}%` }}
                 />
                 <div
                   className="h-full bg-primary transition-all duration-75"
-                  style={{ width: `${Math.max(0, progress - 60)}%` }}
+                  style={{ width: `${Math.max(0, progress - PROGRESS_BAR.COLOR_SPLIT)}%` }}
                 />
               </div>
             </div>
