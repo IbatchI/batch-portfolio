@@ -7,17 +7,23 @@ import { RainDrop } from "./components/rain-drop";
 import { Rooftops } from "./components/rooftops";
 import { EzioSilhouette } from "./components/ezio-silhouette";
 
+const STAR_COUNT = 50;
+const RAINDROP_COUNT = 30;
+const PARTICLE_DELAY_MULTIPLIER = 0.1;
+const PRESS_START_DELAY_MS = 500;
+
+const STARS = Array.from({ length: STAR_COUNT }, (_, i) => i);
+const RAINDROPS = Array.from({ length: RAINDROP_COUNT }, (_, i) => i);
+
 interface TitleScreenProps {
   onStart: () => void;
 }
 
 export function TitleScreen({ onStart }: TitleScreenProps) {
   const [showPressStart, setShowPressStart] = useState(false);
-  const [stars] = useState(() => Array.from({ length: 50 }, (_, i) => i));
-  const [rainDrops] = useState(() => Array.from({ length: 30 }, (_, i) => i));
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowPressStart(true), 500);
+    const timer = setTimeout(() => setShowPressStart(true), PRESS_START_DELAY_MS);
     return () => clearTimeout(timer);
   }, []);
 
@@ -42,15 +48,15 @@ export function TitleScreen({ onStart }: TitleScreenProps) {
     >
       {/* Stars background */}
       <div className="absolute inset-0">
-        {stars.map((i) => (
-          <Star key={i} delay={i * 0.1} />
+        {STARS.map((i) => (
+          <Star key={i} delay={i * PARTICLE_DELAY_MULTIPLIER} />
         ))}
       </div>
 
       {/* Rain effect */}
       <div className="absolute inset-0 overflow-hidden">
-        {rainDrops.map((i) => (
-          <RainDrop key={i} delay={i * 0.1} />
+        {RAINDROPS.map((i) => (
+          <RainDrop key={i} delay={i * PARTICLE_DELAY_MULTIPLIER} />
         ))}
       </div>
 
