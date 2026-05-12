@@ -5,7 +5,7 @@ import { portfolioData } from "@/src/features/shared/lib/portfolio-data";
 import { Star } from "./components/star";
 import { RainDrop } from "./components/rain-drop";
 import { Rooftops } from "./components/rooftops";
-import { EzioSilhouette } from "./components/ezio-silhouette";
+import { DeathStar } from "./components/death-star";
 
 const STAR_COUNT = 50;
 const RAINDROP_COUNT = 30;
@@ -64,7 +64,7 @@ export function TitleScreen({ onStart }: TitleScreenProps) {
       <Rooftops />
 
       {/* Ezio easter egg */}
-      <EzioSilhouette />
+      <DeathStar />
 
       {/* Main title */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
