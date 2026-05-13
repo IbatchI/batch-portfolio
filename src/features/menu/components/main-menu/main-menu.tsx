@@ -16,6 +16,16 @@ export const menuOptions: MenuOption[] = [
   { id: "contact", label: "Transmision", gameLabel: "CONTACT" },
 ];
 
+const ACTIVE_INDICATOR = "►";
+const INACTIVE_INDICATOR = " ";
+
+function getMenuItemClassName(isActive: boolean): string {
+  const base = "w-full text-left px-3 py-3 text-xs md:text-sm transition-all";
+  const active = "bg-success/20 text-success text-glow-green pixel-border border-success/50";
+  const inactive = "text-foreground hover:text-primary hover:bg-muted/30";
+  return `${base} ${isActive ? active : inactive}`;
+}
+
 interface MainMenuProps {
   activeSection: MenuSection;
   onSectionChange: (section: MenuSection) => void;
@@ -29,21 +39,20 @@ export function MainMenu({ activeSection, onSectionChange }: MainMenuProps) {
       </div>
 
       <nav className="space-y-2">
-        {menuOptions.map((option) => (
-          <button
-            key={option.id}
-            onClick={() => onSectionChange(option.id)}
-            className={`w-full text-left px-3 py-3 text-xs md:text-sm transition-all ${
-              activeSection === option.id
-                ? "bg-success/20 text-success text-glow-green pixel-border border-success/50"
-                : "text-foreground hover:text-primary hover:bg-muted/30"
-            }`}
-          >
-            <span className="mr-2">{activeSection === option.id ? "►" : " "}</span>
-            <span className="uppercase tracking-wide">{option.gameLabel}</span>
-            <span className="text-muted-foreground ml-2">— {option.label}</span>
-          </button>
-        ))}
+        {menuOptions.map((option) => {
+          const isActive = activeSection === option.id;
+          return (
+            <button
+              key={option.id}
+              onClick={() => onSectionChange(option.id)}
+              className={getMenuItemClassName(isActive)}
+            >
+              <span className="mr-2">{isActive ? ACTIVE_INDICATOR : INACTIVE_INDICATOR}</span>
+              <span className="uppercase tracking-wide">{option.gameLabel}</span>
+              <span className="text-muted-foreground ml-2">— {option.label}</span>
+            </button>
+          );
+        })}
       </nav>
     </div>
   );
