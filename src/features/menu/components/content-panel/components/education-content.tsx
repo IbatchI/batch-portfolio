@@ -7,8 +7,8 @@ export function EducationContent() {
         {"// CODEX ENTRIES DISCOVERED"}
       </div>
 
-      {portfolioData.education.map((edu, index) => (
-        <div key={index} className="pixel-border border-border bg-background/50 p-4">
+      {portfolioData.education.map((edu) => (
+        <div key={edu.title} className="pixel-border border-border bg-background/50 p-4">
           <div className="text-xs text-foreground font-bold">{edu.title}</div>
           <div className="text-xs text-muted-foreground mt-1 font-mono">
             {edu.institution}
