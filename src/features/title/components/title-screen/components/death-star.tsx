@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const DEATH_STAR_VISIBLE_DURATION_MS = 8000;
-const DEATH_STAR_INTERVAL_MIN_MS = 1000;
+const DEATH_STAR_INTERVAL_MIN_MS = 15000;
 const DEATH_STAR_INTERVAL_RANDOM_MS = 10000;
-const DEATH_STAR_INITIAL_DELAY_MS = 500;
+const DEATH_STAR_INITIAL_DELAY_MS = 5000;
 const DEATH_STAR_ANIMATION_DURATION = "8s";
 
 export function DeathStar() {
