@@ -1,23 +1,25 @@
 import { portfolioData } from "@/src/features/shared/lib/portfolio-data";
+import { useDictionary } from "@/src/features/shared/components/dictionary-provider";
 import { SkillBar } from "./skill-bar";
 
 export function SkillsContent() {
+  const dictionary = useDictionary();
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between mb-4">
         <span className="text-primary text-xs uppercase tracking-wider">
-          × INVENTORY — LUCAS.EXE
+          {dictionary.skills.title}
         </span>
         <span className="text-xs text-muted-foreground">
-          LVL 6 · FRONTEND KNIGHT
+          {dictionary.skills.level}
         </span>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Frontend Skills */}
         <div>
           <div className="text-xs text-secondary mb-3 tracking-wider">
-            {"// FRONTEND"}
+            {dictionary.skills.frontend}
           </div>
           <div className="space-y-3">
             {portfolioData.skills.frontend.map((skill) => (
@@ -26,10 +28,9 @@ export function SkillsContent() {
           </div>
         </div>
 
-        {/* Tools & Backend */}
         <div>
           <div className="text-xs text-secondary mb-3 tracking-wider">
-            {"// TOOLS & BACKEND"}
+            {dictionary.skills.toolsAndBackend}
           </div>
           <div className="space-y-3">
             {portfolioData.skills.toolsAndBackend.map((skill) => (

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { portfolioData } from "@/src/features/shared/lib/portfolio-data";
+import { useDictionary } from "@/src/features/shared/components/dictionary-provider";
 
 const BOOT_MESSAGE_DELAYS = {
   INIT: 0,
@@ -22,15 +23,16 @@ interface BootScreenProps {
 }
 
 export function BootScreen({ onComplete }: BootScreenProps) {
+  const dictionary = useDictionary();
   const [lines, setLines] = useState<string[]>([]);
   const [progress, setProgress] = useState(0);
   const [showProgress, setShowProgress] = useState(false);
 
   const bootMessages = [
-    { text: `LUCAS.EXE ${portfolioData.version} — INITIALIZING...`, color: "text-primary", delay: BOOT_MESSAGE_DELAYS.INIT },
-    { text: "[ OK ] Frontend modules loaded", color: "text-muted-foreground", delay: BOOT_MESSAGE_DELAYS.MODULES },
-    { text: "[ OK ] React · Next.js · TypeScript", color: "text-muted-foreground", delay: BOOT_MESSAGE_DELAYS.STACK },
-    { text: "Loading portfolio data...", color: "text-secondary", delay: BOOT_MESSAGE_DELAYS.PORTFOLIO },
+    { text: dictionary.boot.initializing.replace("{version}", portfolioData.version), delay: BOOT_MESSAGE_DELAYS.INIT },
+    { text: dictionary.boot.modulesLoaded, delay: BOOT_MESSAGE_DELAYS.MODULES },
+    { text: dictionary.boot.stack, delay: BOOT_MESSAGE_DELAYS.STACK },
+    { text: dictionary.boot.loadingPortfolio, delay: BOOT_MESSAGE_DELAYS.PORTFOLIO },
   ];
 
   useEffect(() => {

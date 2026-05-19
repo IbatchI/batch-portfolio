@@ -1,0 +1,85 @@
+{
+  "boot": {
+    "initializing": "LUCAS.EXE {version} — INICIALIZANDO...",
+    "modulesLoaded": "[ OK ] Módulos frontend cargados",
+    "stack": "[ OK ] React · Next.js · TypeScript",
+    "loadingPortfolio": "Cargando datos del portfolio..."
+  },
+  "title": {
+    "pressStart": "[ PRESIONÁ INICIO ]"
+  },
+  "menu": {
+    "select": "// SELECCIONAR",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Skills",
+    "education": "Educacion",
+    "contact": "Transmision"
+  },
+  "content": {
+    "description": "// DESCRIPCION"
+  },
+  "about": {
+    "description": "Desarrollador Frontend. Especialista en React, Next.js y TypeScript. Mendoza (remoto).",
+    "tags": ["React", "Next.js", "TS", "+3 años"]
+  },
+  "experience": {
+    "questLog": "QUEST LOG — MISIONES",
+    "statusActive": "ACTIVA",
+    "statusComplete": "COMPLETA",
+    "jobs": [
+      {
+        "company": "Midas Consultores",
+        "role": "Liderazgo, micro-frontends, clean code",
+        "period": "May 2021 - Presente"
+      },
+      {
+        "company": "Caramel Point",
+        "role": "React Native · monorepo · mobile",
+        "period": "Dic 2024 - Apr 2025"
+      },
+      {
+        "company": "Agripay",
+        "role": "TypeScript · Cypress · CI/CD",
+        "period": "Sep 2021 - May 2022"
+      }
+    ]
+  },
+  "skills": {
+    "title": "× INVENTORY — LUCAS.EXE",
+    "level": "LVL 6 · FRONTEND KNIGHT",
+    "frontend": "// FRONTEND",
+    "toolsAndBackend": "// TOOLS & BACKEND"
+  },
+  "education": {
+    "codex": "// ENTRADAS DEL CODEX DESCUBIERTAS",
+    "entries": [
+      {
+        "title": "Ingeniería en Sistemas",
+        "institution": "Universidad Tecnológica Nacional",
+        "period": "2018 - 2023"
+      },
+      {
+        "title": "Certified React Developer",
+        "institution": "Meta",
+        "period": "2022"
+      }
+    ]
+  },
+  "contact": {
+    "command": "$ contacto --init lucas.hernandez",
+    "establishing": "► señal establecida..."
+  },
+  "game": {
+    "backToTitle": "← VOLVER AL TÍTULO"
+  },
+  "konami": {
+    "title": "¡CÓDIGO KONAMI ACTIVADO!",
+    "subtitle": "+30 VIDAS · MODO DIOS HABILITADO",
+    "secret": "Encontraste un secreto! 🎮"
+  },
+  "meta": {
+    "title": "LUCAS.EXE | Frontend Developer",
+    "description": "Portfolio de Lucas Hernandez - Frontend Developer especialista en React, Next.js y TypeScript"
+  }
+}

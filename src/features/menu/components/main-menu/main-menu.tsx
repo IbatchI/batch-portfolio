@@ -1,23 +1,19 @@
 "use client";
 
+import { useDictionary } from "@/src/features/shared/components/dictionary-provider";
+
 export type MenuSection = "about" | "experience" | "skills" | "education" | "contact";
-
-interface MenuOption {
-  id: MenuSection;
-  label: string;
-  gameLabel: string;
-}
-
-export const menuOptions: MenuOption[] = [
-  { id: "about", label: "Sobre mi", gameLabel: "NEW GAME" },
-  { id: "experience", label: "Experiencia", gameLabel: "LOAD GAME" },
-  { id: "skills", label: "Skills", gameLabel: "INVENTORY" },
-  { id: "education", label: "Educacion", gameLabel: "CODEX" },
-  { id: "contact", label: "Transmision", gameLabel: "CONTACT" },
-];
 
 const ACTIVE_INDICATOR = "►";
 const INACTIVE_INDICATOR = " ";
+
+const GAME_LABELS: Record<MenuSection, string> = {
+  about: "NEW GAME",
+  experience: "LOAD GAME",
+  skills: "INVENTORY",
+  education: "CODEX",
+  contact: "CONTACT",
+};
 
 function getMenuItemClassName(isActive: boolean): string {
   const base = "w-full text-left px-3 py-3 text-xs md:text-sm transition-all";
@@ -32,24 +28,27 @@ interface MainMenuProps {
 }
 
 export function MainMenu({ activeSection, onSectionChange }: MainMenuProps) {
+  const dictionary = useDictionary();
+  const sections: MenuSection[] = ["about", "experience", "skills", "education", "contact"];
+
   return (
     <div className="pixel-border border-border bg-card p-4 md:p-6 h-full">
       <div className="text-xs text-muted-foreground mb-4 tracking-wider">
-        {"// SELECT"}
+        {dictionary.menu.select}
       </div>
 
       <nav className="space-y-2">
-        {menuOptions.map((option) => {
-          const isActive = activeSection === option.id;
+        {sections.map((section) => {
+          const isActive = activeSection === section;
           return (
             <button
-              key={option.id}
-              onClick={() => onSectionChange(option.id)}
+              key={section}
+              onClick={() => onSectionChange(section)}
               className={getMenuItemClassName(isActive)}
             >
               <span className="mr-2">{isActive ? ACTIVE_INDICATOR : INACTIVE_INDICATOR}</span>
-              <span className="uppercase tracking-wide">{option.gameLabel}</span>
-              <span className="text-muted-foreground ml-2">— {option.label}</span>
+              <span className="uppercase tracking-wide">{GAME_LABELS[section]}</span>
+              <span className="text-muted-foreground ml-2">— {dictionary.menu[section]}</span>
             </button>
           );
         })}

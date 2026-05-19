@@ -1,5 +1,5 @@
 import { PortfolioGame } from "@/src/features/portfolio";
 
-export default function HomePage() {
+export default function LocalePage() {
   return <PortfolioGame />;
 }

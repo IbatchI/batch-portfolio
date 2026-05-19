@@ -1,12 +1,15 @@
 import { portfolioData } from "@/src/features/shared/lib/portfolio-data";
+import { useDictionary } from "@/src/features/shared/components/dictionary-provider";
 
 export function ContactContent() {
+  const dictionary = useDictionary();
+
   return (
     <div className="font-mono text-sm space-y-3">
       <div className="text-primary text-glow-cyan">
-        $ contact --init lucas.hernandez
+        {dictionary.contact.command}
       </div>
-      <div className="text-muted-foreground">► signal established...</div>
+      <div className="text-muted-foreground">{dictionary.contact.establishing}</div>
 
       <div className="space-y-2 mt-4">
         <div>

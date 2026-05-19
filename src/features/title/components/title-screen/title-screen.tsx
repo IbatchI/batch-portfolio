@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { portfolioData } from "@/src/features/shared/lib/portfolio-data";
+import { useDictionary } from "@/src/features/shared/components/dictionary-provider";
 import { Star } from "./components/star";
 import { RainDrop } from "./components/rain-drop";
 import { Rooftops } from "./components/rooftops";
@@ -20,6 +21,7 @@ interface TitleScreenProps {
 }
 
 export function TitleScreen({ onStart }: TitleScreenProps) {
+  const dictionary = useDictionary();
   const [showPressStart, setShowPressStart] = useState(false);
 
   useEffect(() => {
@@ -46,29 +48,22 @@ export function TitleScreen({ onStart }: TitleScreenProps) {
       className="min-h-screen bg-background relative overflow-hidden scanlines crt-flicker cursor-pointer"
       onClick={onStart}
     >
-      {/* Stars background */}
       <div className="absolute inset-0">
         {STARS.map((i) => (
           <Star key={i} delay={i * PARTICLE_DELAY_MULTIPLIER} />
         ))}
       </div>
 
-      {/* Rain effect */}
       <div className="absolute inset-0 overflow-hidden">
         {RAINDROPS.map((i) => (
           <RainDrop key={i} delay={i * PARTICLE_DELAY_MULTIPLIER} />
         ))}
       </div>
 
-      {/* Rooftops silhouette */}
       <Rooftops />
-
-      {/* Ezio easter egg */}
       <DeathStar />
 
-      {/* Main title */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-20">
-        {/* Decorative top border - AC logo hint */}
         <div className="mb-8 flex items-center gap-2">
           <div className="w-8 h-px bg-muted-foreground/30" />
           <div className="w-2 h-2 rotate-45 border border-muted-foreground/30" />
@@ -86,24 +81,20 @@ export function TitleScreen({ onStart }: TitleScreenProps) {
           — {portfolioData.title} —
         </p>
 
-        {/* Press Start */}
         {showPressStart && (
           <button
             onClick={onStart}
             className="mt-12 text-xs md:text-sm text-foreground hover:text-primary transition-colors cursor-blink focus:outline-none focus:text-primary"
           >
-            [ PRESS START ]
+            {dictionary.title.pressStart}
           </button>
         )}
 
-        {/* Decorative bottom elements */}
         <div className="mt-16 flex items-center gap-4">
-          {/* Small lightsaber decoration */}
           <div className="w-1 h-8 bg-primary rounded-full shadow-[0_0_10px_oklch(0.7_0.2_200)]" />
         </div>
       </div>
 
-      {/* Screen vignette */}
       <div
         className="absolute inset-0 pointer-events-none z-30"
         style={{
