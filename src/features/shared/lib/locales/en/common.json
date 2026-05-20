@@ -81,5 +81,25 @@
   "meta": {
     "title": "LUCAS.EXE | Frontend Developer",
     "description": "Lucas Hernandez Portfolio - Frontend Developer specialist in React, Next.js and TypeScript"
+  },
+  "notFound": {
+    "terminalTitle": "lucas.exe — bash — 80×24",
+    "boot": [
+      { "text": "> SYSTEM BOOT................... ",    "suffix": "ok",   "style": "muted" },
+      { "text": "> LOADING MODULES............... ",   "suffix": "ok",   "style": "muted" },
+      { "text": "> RESOLVING PATH................ ",   "suffix": "fail", "style": "muted" },
+      { "text": "> ERROR 0x0000404: PAGE_NOT_FOUND",   "suffix": "",     "style": "error" },
+      { "text": "> STACK TRACE:",                       "suffix": "",     "style": "muted" },
+      { "text": "    at Router.resolve (/src/app/router.ts:88)", "suffix": "", "style": "dim" },
+      { "text": "    at App.navigate (/src/app/index.ts:42)",    "suffix": "", "style": "dim" },
+      { "text": "    at window.onpopstate (browser)",             "suffix": "", "style": "dim" },
+      { "text": "> ATTEMPTING RECOVERY........... ",   "suffix": "fail", "style": "muted" },
+      { "text": "> KERNEL PANIC. HALTING EXECUTION.",  "suffix": "",     "style": "error" }
+    ],
+    "subtitle": "The requested path does not exist in this system.",
+    "hint": "The file was deleted, never existed, or the universe made a typo.",
+    "goHome": "cd home",
+    "goBack": "← go back",
+    "prompt": "lucas@portfolio:~$"
   }
 }

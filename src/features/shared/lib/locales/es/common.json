@@ -81,5 +81,25 @@
   "meta": {
     "title": "LUCAS.EXE | Frontend Developer",
     "description": "Portfolio de Lucas Hernandez - Frontend Developer especialista en React, Next.js y TypeScript"
+  },
+  "notFound": {
+    "terminalTitle": "lucas.exe — bash — 80×24",
+    "boot": [
+      { "text": "> ARRANQUE DEL SISTEMA.......... ",     "suffix": "ok",   "style": "muted" },
+      { "text": "> CARGANDO MÓDULOS.............. ",     "suffix": "ok",   "style": "muted" },
+      { "text": "> RESOLVIENDO RUTA.............. ",     "suffix": "fail", "style": "muted" },
+      { "text": "> ERROR 0x0000404: PAGINA_NO_ENCONTRADA", "suffix": "",   "style": "error" },
+      { "text": "> STACK TRACE:",                         "suffix": "",    "style": "muted" },
+      { "text": "    at Router.resolve (/src/app/router.ts:88)", "suffix": "", "style": "dim" },
+      { "text": "    at App.navigate (/src/app/index.ts:42)",    "suffix": "", "style": "dim" },
+      { "text": "    at window.onpopstate (browser)",             "suffix": "", "style": "dim" },
+      { "text": "> INTENTANDO RECUPERACIÓN....... ",     "suffix": "fail", "style": "muted" },
+      { "text": "> KERNEL PANIC. DETENIENDO EJECUCIÓN.", "suffix": "",     "style": "error" }
+    ],
+    "subtitle": "La ruta solicitada no existe en este sistema.",
+    "hint": "El archivo fue eliminado, nunca existió, o el universo cometió un typo.",
+    "goHome": "cd home",
+    "goBack": "← volver",
+    "prompt": "lucas@portfolio:~$"
   }
 }

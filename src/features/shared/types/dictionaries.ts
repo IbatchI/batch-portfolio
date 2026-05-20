@@ -67,4 +67,13 @@ export interface Dictionary {
     title: string;
     description: string;
   };
+  notFound: {
+    terminalTitle: string;
+    boot: Array<{ text: string; suffix: string; style: "muted" | "error" | "dim" }>;
+    subtitle: string;
+    hint: string;
+    goHome: string;
+    goBack: string;
+    prompt: string;
+  };
 }
