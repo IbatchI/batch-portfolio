@@ -4,12 +4,21 @@ export const DEFAULT_LOCALE = "es" as const;
 export type Locale = (typeof LOCALES)[number];
 
 export function getPreferredLocale(acceptLanguage: string): Locale {
-  const normalized = acceptLanguage.toLowerCase();
+  // Parse and sort by q-value (priority), then match against supported locales
+  const preferred = acceptLanguage
+    .toLowerCase()
+    .split(",")
+    .map((entry) => {
+      const [lang, q] = entry.trim().split(";q=");
+      return { lang: lang.trim(), q: q ? parseFloat(q) : 1.0 };
+    })
+    .sort((a, b) => b.q - a.q)
+    .map(({ lang }) => lang);
 
   return (
-    LOCALES.find((locale) =>
-      normalized.split(",").some((lang) => lang.trim().startsWith(locale))
-    ) ?? DEFAULT_LOCALE
+    preferred
+      .flatMap((lang) => LOCALES.filter((locale) => lang.startsWith(locale)))[0]
+    ?? DEFAULT_LOCALE
   );
 }
 
