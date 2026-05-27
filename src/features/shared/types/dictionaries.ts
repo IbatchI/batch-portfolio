@@ -21,6 +21,9 @@ export interface AchievementLabels {
   mobile: string;
   testing: string;
   cicd: string;
+  formValidation: string;
+  containerization: string;
+  codeQuality: string;
 }
 
 export interface EducationEntry {

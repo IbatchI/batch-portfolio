@@ -53,7 +53,7 @@
       },
       "CGI Capital": {
         "name": "CGI Capital",
-        "description": "Landing page corporativa con internacionalización completa, animaciones fluidas y excelente performance."
+        "description": "Landing corporativa con Lighthouse 95+. Full i18n (es/en) con deteccion de locale por middleware. Validacion de formularios con Zod + React Hook Form. Deployment containerizado con Docker."
       },
       "Mobile App": {
         "name": "App Mobile",
@@ -69,13 +69,16 @@
       "clientCommunication": "Client Communication",
       "sprintPlanning": "Sprint Planning",
       "reengineering": "Re-engineering",
-      "i18n": "Internacionalización",
+      "i18n": "Internacionalizacion",
       "animations": "Animaciones",
       "performance": "Performance",
       "monorepo": "Monorepo",
       "mobile": "Mobile Dev",
       "testing": "Testing",
-      "cicd": "CI/CD"
+      "cicd": "CI/CD",
+      "formValidation": "Form Validation",
+      "containerization": "Containerization",
+      "codeQuality": "Code Quality"
     }
   },
   "skills": {

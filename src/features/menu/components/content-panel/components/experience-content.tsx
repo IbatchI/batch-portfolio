@@ -58,6 +58,11 @@ const TECH_ICONS: Record<string, string> = {
   Cypress: "check",
   "GitHub Actions": "workflow",
   Jest: "test",
+  Zod: "zod",
+  "React Hook Form": "rhf",
+  "shadcn/ui": "shadcn",
+  Docker: "docker",
+  SonarQube: "sonar",
 };
 
 function TechIcon({ tech }: { tech: string }) {
@@ -78,10 +83,52 @@ function TechIcon({ tech }: { tech: string }) {
     check: <span className="text-xs">CY</span>,
     workflow: <span className="text-xs">GH</span>,
     test: <span className="text-xs">JT</span>,
+    zod: <span className="text-xs">ZD</span>,
+    rhf: <span className="text-xs">RHF</span>,
+    shadcn: <span className="text-xs">SH</span>,
+    docker: <span className="text-xs">DO</span>,
+    sonar: <span className="text-xs">SQ</span>,
     code: <span className="text-xs">{"{ }"}</span>,
   };
   
   return icons[iconType];
+}
+
+interface DifficultyStats {
+  complexity: number;
+  scale: number;
+  duration: number;
+}
+
+function DifficultyBar({ label, value, color }: { label: string; value: number; color: string }) {
+  return (
+    <div className="flex items-center gap-2">
+      <span className="text-xs text-muted-foreground w-16 shrink-0">{label}</span>
+      <div className="flex-1 h-2 bg-background border border-border/50 overflow-hidden">
+        <div 
+          className={`h-full ${color} transition-all duration-500`}
+          style={{ width: `${value}%` }}
+        />
+      </div>
+      <span className="text-xs text-muted-foreground w-8 text-right">{value}</span>
+    </div>
+  );
+}
+
+function DifficultyStats({ stats }: { stats: DifficultyStats }) {
+  return (
+    <div className="pl-4 mb-3">
+      <div className="text-xs text-pink/70 mb-2 font-mono">// DIFFICULTY</div>
+      <div className="space-y-1.5 max-w-xs">
+        <DifficultyBar label="CMPLX" value={stats.complexity} color="bg-error" />
+        <DifficultyBar label="SCALE" value={stats.scale} color="bg-secondary" />
+        <DifficultyBar label="TIME" value={Math.min(stats.duration * 2.5, 100)} color="bg-primary" />
+      </div>
+      <div className="text-xs text-muted-foreground mt-1.5 font-mono">
+        {stats.duration} {stats.duration === 1 ? "mes" : "meses"}
+      </div>
+    </div>
+  );
 }
 
 export function ExperienceContent() {
@@ -170,6 +217,11 @@ export function ExperienceContent() {
                         <p className="text-xs text-muted-foreground mb-3 pl-4 leading-relaxed">
                           {projectInfo.description}
                         </p>
+                      )}
+
+                      {/* Difficulty Stats */}
+                      {project.difficulty && (
+                        <DifficultyStats stats={project.difficulty} />
                       )}
 
                       {/* Achievements */}

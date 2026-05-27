@@ -53,7 +53,7 @@
       },
       "CGI Capital": {
         "name": "CGI Capital",
-        "description": "Corporate landing page with full internationalization, smooth animations and excellent performance."
+        "description": "Corporate landing with 95+ Lighthouse score. Full i18n (es/en) with middleware-based locale detection. Form validation with Zod + React Hook Form. Containerized deployment with Docker."
       },
       "Mobile App": {
         "name": "Mobile App",
@@ -75,7 +75,10 @@
       "monorepo": "Monorepo",
       "mobile": "Mobile Dev",
       "testing": "Testing",
-      "cicd": "CI/CD"
+      "cicd": "CI/CD",
+      "formValidation": "Form Validation",
+      "containerization": "Containerization",
+      "codeQuality": "Code Quality"
     }
   },
   "skills": {
