@@ -1,0 +1,105 @@
+{
+  "boot": {
+    "initializing": "LUCAS.EXE {version} — INITIALIZING...",
+    "modulesLoaded": "[ OK ] Frontend modules loaded",
+    "stack": "[ OK ] React · Next.js · TypeScript",
+    "loadingPortfolio": "Loading portfolio data..."
+  },
+  "title": {
+    "pressStart": "[ PRESS START ]"
+  },
+  "menu": {
+    "select": "// SELECT",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Transmission"
+  },
+  "content": {
+    "description": "// DESCRIPTION"
+  },
+  "about": {
+    "description": "Frontend Developer. Specialist in React, Next.js and TypeScript. Mendoza (remote).",
+    "tags": ["React", "Next.js", "TS", "+3 years"]
+  },
+  "experience": {
+    "questLog": "QUEST LOG — MISSIONS",
+    "statusActive": "ACTIVE",
+    "statusComplete": "COMPLETE",
+    "jobs": [
+      {
+        "company": "Midas Consultores",
+        "role": "Leadership, micro-frontends, clean code",
+        "period": "May 2021 - Present"
+      },
+      {
+        "company": "Caramel Point",
+        "role": "React Native · monorepo · mobile",
+        "period": "Dec 2024 - Apr 2025"
+      },
+      {
+        "company": "Agripay",
+        "role": "TypeScript · Cypress · CI/CD",
+        "period": "Sep 2021 - May 2022"
+      }
+    ]
+  },
+  "skills": {
+    "title": "× INVENTORY — LUCAS.EXE",
+    "level": "LVL 6 · FRONTEND KNIGHT",
+    "frontend": "// FRONTEND",
+    "toolsAndBackend": "// TOOLS & BACKEND"
+  },
+  "education": {
+    "codex": "// CODEX ENTRIES DISCOVERED",
+    "entries": [
+      {
+        "title": "Systems Engineering",
+        "institution": "Universidad Tecnológica Nacional",
+        "period": "2018 - 2023"
+      },
+      {
+        "title": "Certified React Developer",
+        "institution": "Meta",
+        "period": "2022"
+      }
+    ]
+  },
+  "contact": {
+    "command": "$ contact --init lucas.hernandez",
+    "establishing": "► signal established..."
+  },
+  "game": {
+    "backToTitle": "← BACK TO TITLE"
+  },
+  "konami": {
+    "title": "KONAMI CODE ACTIVATED!",
+    "subtitle": "+30 LIVES · GOD MODE ENABLED",
+    "secret": "You found a secret! 🎮"
+  },
+  "meta": {
+    "title": "LUCAS.EXE | Frontend Developer",
+    "description": "Lucas Hernandez Portfolio - Frontend Developer specialist in React, Next.js and TypeScript"
+  },
+  "notFound": {
+    "terminalTitle": "lucas.exe — bash — 80×24",
+    "boot": [
+      { "text": "> SYSTEM BOOT................... ",    "suffix": "ok",   "style": "muted" },
+      { "text": "> LOADING MODULES............... ",   "suffix": "ok",   "style": "muted" },
+      { "text": "> RESOLVING PATH................ ",   "suffix": "fail", "style": "muted" },
+      { "text": "> ERROR 0x0000404: PAGE_NOT_FOUND",   "suffix": "",     "style": "error" },
+      { "text": "> STACK TRACE:",                       "suffix": "",     "style": "muted" },
+      { "text": "    at Router.resolve (/src/app/router.ts:88)", "suffix": "", "style": "dim" },
+      { "text": "    at App.navigate (/src/app/index.ts:42)",    "suffix": "", "style": "dim" },
+      { "text": "    at window.onpopstate (browser)",             "suffix": "", "style": "dim" },
+      { "text": "> ATTEMPTING RECOVERY........... ",   "suffix": "fail", "style": "muted" },
+      { "text": "> KERNEL PANIC. HALTING EXECUTION.",  "suffix": "",     "style": "error" }
+    ],
+    "subtitle": "The requested path does not exist in this system.",
+    "hint": "The file was deleted, never existed, or the universe made a typo.",
+    "goHome": "cd home",
+    "goBack": "← go back",
+    "prompt": "lucas@portfolio:~$"
+  }
+}

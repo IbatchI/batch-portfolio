@@ -1,1 +1,1 @@
-export { GameScreen } from "./components/GameScreen";
+export { GameScreen } from "./components/game-screen/game-screen";

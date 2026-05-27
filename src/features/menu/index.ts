@@ -1,2 +1,3 @@
-export { MainMenu, ContentPanel, menuOptions } from "./components/MainMenu";
-export type { MenuSection } from "./components/MainMenu";
+export { MainMenu } from "./components/main-menu/main-menu";
+export type { MenuSection } from "./components/main-menu/main-menu";
+export { ContentPanel } from "./components/content-panel/content-panel";
