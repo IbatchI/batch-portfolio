@@ -120,7 +120,7 @@ function DifficultyStats({ stats }: { stats: DifficultyStats }) {
     <div className="pl-4 mb-3">
       <div className="text-xs text-pink/70 mb-2 font-mono">// DIFFICULTY</div>
       <div className="space-y-1.5 max-w-xs">
-        <DifficultyBar label="CMPLX" value={stats.complexity} color="bg-error" />
+        <DifficultyBar label="CMPLX" value={stats.complexity} color="bg-destructive" />
         <DifficultyBar label="SCALE" value={stats.scale} color="bg-secondary" />
         <DifficultyBar label="TIME" value={Math.min(stats.duration * 2.5, 100)} color="bg-primary" />
       </div>
