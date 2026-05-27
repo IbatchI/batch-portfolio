@@ -29,30 +29,55 @@ export const portfolioData = {
   experience: [
     {
       company: "Midas Consultores",
-      role: "Liderazgo, micro-frontends, clean code",
       xp: "+2400 XP",
       period: "May 2021 - Presente",
       status: "ACTIVA" as const,
       icon: "⚡",
-      color: "yellow",
+      color: "yellow" as const,
+      projects: [
+        {
+          name: "YClick",
+          url: "https://yclick-home.ypf.com/#/",
+          achievements: ["teamLeadership", "clientCommunication", "sprintPlanning", "reengineering"],
+          tech: ["React", "TypeScript", "Micro-frontends", "Clean Architecture", "Scrum"],
+        },
+        {
+          name: "CGI Capital",
+          url: "https://www.cgi-capital.com/en",
+          achievements: ["i18n", "animations", "performance"],
+          tech: ["Next.js", "TypeScript", "Framer Motion", "i18next"],
+        },
+      ],
     },
     {
       company: "Caramel Point",
-      role: "React Native · monorepo · mobile",
       xp: "+900 XP",
       period: "Dic 2024 - Apr 2025",
       status: "COMPLETA" as const,
       icon: "📦",
-      color: "pink",
+      color: "pink" as const,
+      projects: [
+        {
+          name: "Mobile App",
+          achievements: ["monorepo", "mobile"],
+          tech: ["React Native", "TypeScript", "Turborepo", "Expo"],
+        },
+      ],
     },
     {
       company: "Agripay",
-      role: "TypeScript · Cypress · CI/CD",
       xp: "+600 XP",
       period: "Sep 2021 - May 2022",
       status: "COMPLETA" as const,
       icon: "💰",
-      color: "green",
+      color: "green" as const,
+      projects: [
+        {
+          name: "Payment Platform",
+          achievements: ["testing", "cicd"],
+          tech: ["TypeScript", "Cypress", "GitHub Actions", "Jest"],
+        },
+      ],
     },
   ],
 
@@ -79,3 +104,6 @@ export const portfolioData = {
     konamiCode: ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"],
   },
 } as const;
+
+export type ExperienceColor = "yellow" | "pink" | "green";
+export type ExperienceStatus = "ACTIVA" | "COMPLETA";

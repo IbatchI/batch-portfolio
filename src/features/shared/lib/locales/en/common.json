@@ -27,23 +27,56 @@
     "questLog": "QUEST LOG — MISSIONS",
     "statusActive": "ACTIVE",
     "statusComplete": "COMPLETE",
+    "lootObtained": "// LOOT OBTAINED",
+    "achievementsUnlocked": "// ACHIEVEMENTS UNLOCKED",
     "jobs": [
       {
         "company": "Midas Consultores",
-        "role": "Leadership, micro-frontends, clean code",
+        "role": "Frontend Team Lead · Architecture · Clean Code",
         "period": "May 2021 - Present"
       },
       {
         "company": "Caramel Point",
-        "role": "React Native · monorepo · mobile",
+        "role": "React Native · Monorepo · Mobile",
         "period": "Dec 2024 - Apr 2025"
       },
       {
         "company": "Agripay",
-        "role": "TypeScript · Cypress · CI/CD",
+        "role": "TypeScript · Testing · CI/CD",
         "period": "Sep 2021 - May 2022"
       }
-    ]
+    ],
+    "projects": {
+      "YClick": {
+        "name": "YClick (YPF)",
+        "description": "Ambitious YPF project. Frontend Team Leader. Responsibilities: implementing solutions, sprint planning, task distribution, client communication, estimations. Led the project re-engineering."
+      },
+      "CGI Capital": {
+        "name": "CGI Capital",
+        "description": "Corporate landing page with full internationalization, smooth animations and excellent performance."
+      },
+      "Mobile App": {
+        "name": "Mobile App",
+        "description": "Cross-platform mobile application with monorepo architecture."
+      },
+      "Payment Platform": {
+        "name": "Payment Platform",
+        "description": "Payment system with automated testing and CI/CD pipelines."
+      }
+    },
+    "achievements": {
+      "teamLeadership": "Team Leadership",
+      "clientCommunication": "Client Communication",
+      "sprintPlanning": "Sprint Planning",
+      "reengineering": "Re-engineering",
+      "i18n": "Internationalization",
+      "animations": "Animations",
+      "performance": "Performance",
+      "monorepo": "Monorepo",
+      "mobile": "Mobile Dev",
+      "testing": "Testing",
+      "cicd": "CI/CD"
+    }
   },
   "skills": {
     "title": "× INVENTORY — LUCAS.EXE",
@@ -76,7 +109,7 @@
   "konami": {
     "title": "KONAMI CODE ACTIVATED!",
     "subtitle": "+30 LIVES · GOD MODE ENABLED",
-    "secret": "You found a secret! 🎮"
+    "secret": "You found a secret!"
   },
   "meta": {
     "title": "LUCAS.EXE | Frontend Developer",

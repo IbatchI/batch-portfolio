@@ -27,23 +27,56 @@
     "questLog": "QUEST LOG — MISIONES",
     "statusActive": "ACTIVA",
     "statusComplete": "COMPLETA",
+    "lootObtained": "// LOOT OBTENIDO",
+    "achievementsUnlocked": "// LOGROS DESBLOQUEADOS",
     "jobs": [
       {
         "company": "Midas Consultores",
-        "role": "Liderazgo, micro-frontends, clean code",
+        "role": "Team Lead Frontend · Arquitectura · Clean Code",
         "period": "May 2021 - Presente"
       },
       {
         "company": "Caramel Point",
-        "role": "React Native · monorepo · mobile",
+        "role": "React Native · Monorepo · Mobile",
         "period": "Dic 2024 - Apr 2025"
       },
       {
         "company": "Agripay",
-        "role": "TypeScript · Cypress · CI/CD",
+        "role": "TypeScript · Testing · CI/CD",
         "period": "Sep 2021 - May 2022"
       }
-    ]
+    ],
+    "projects": {
+      "YClick": {
+        "name": "YClick (YPF)",
+        "description": "Proyecto ambicioso de YPF. Team Leader del equipo frontend. Responsabilidades: implementar soluciones, planificar sprints, distribuir tareas, comunicación con cliente, estimaciones. Lideré la reingeniería del proyecto."
+      },
+      "CGI Capital": {
+        "name": "CGI Capital",
+        "description": "Landing page corporativa con internacionalización completa, animaciones fluidas y excelente performance."
+      },
+      "Mobile App": {
+        "name": "App Mobile",
+        "description": "Aplicación móvil multiplataforma con arquitectura monorepo."
+      },
+      "Payment Platform": {
+        "name": "Plataforma de Pagos",
+        "description": "Sistema de pagos con testing automatizado y pipelines de CI/CD."
+      }
+    },
+    "achievements": {
+      "teamLeadership": "Team Leadership",
+      "clientCommunication": "Client Communication",
+      "sprintPlanning": "Sprint Planning",
+      "reengineering": "Re-engineering",
+      "i18n": "Internacionalización",
+      "animations": "Animaciones",
+      "performance": "Performance",
+      "monorepo": "Monorepo",
+      "mobile": "Mobile Dev",
+      "testing": "Testing",
+      "cicd": "CI/CD"
+    }
   },
   "skills": {
     "title": "× INVENTORY — LUCAS.EXE",
@@ -76,7 +109,7 @@
   "konami": {
     "title": "¡CÓDIGO KONAMI ACTIVADO!",
     "subtitle": "+30 VIDAS · MODO DIOS HABILITADO",
-    "secret": "Encontraste un secreto! 🎮"
+    "secret": "Encontraste un secreto!"
   },
   "meta": {
     "title": "LUCAS.EXE | Frontend Developer",

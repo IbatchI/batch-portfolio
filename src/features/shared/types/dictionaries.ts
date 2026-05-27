@@ -4,6 +4,25 @@ export interface JobEntry {
   period: string;
 }
 
+export interface ProjectEntry {
+  name: string;
+  description: string;
+}
+
+export interface AchievementLabels {
+  teamLeadership: string;
+  clientCommunication: string;
+  sprintPlanning: string;
+  reengineering: string;
+  i18n: string;
+  animations: string;
+  performance: string;
+  monorepo: string;
+  mobile: string;
+  testing: string;
+  cicd: string;
+}
+
 export interface EducationEntry {
   title: string;
   institution: string;
@@ -40,6 +59,10 @@ export interface Dictionary {
     statusActive: string;
     statusComplete: string;
     jobs: JobEntry[];
+    projects: Record<string, ProjectEntry>;
+    achievements: AchievementLabels;
+    lootObtained: string;
+    achievementsUnlocked: string;
   };
   skills: {
     title: string;
