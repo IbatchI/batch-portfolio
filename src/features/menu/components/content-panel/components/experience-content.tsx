@@ -47,6 +47,7 @@ const TECH_ICONS: Record<string, string> = {
   React: "gear",
   TypeScript: "scroll",
   "Next.js": "shield",
+  "Next.js 14": "shield",
   "Micro-frontends": "layers",
   "Screaming Architecture": "diamond",
   Scrum: "users",
@@ -62,6 +63,11 @@ const TECH_ICONS: Record<string, string> = {
   "React Hook Form": "rhf",
   "shadcn/ui": "shadcn",
   SonarQube: "sonar",
+  "TanStack Query": "tanstack",
+  "TanStack Table": "table",
+  NextAuth: "auth",
+  Recharts: "chart",
+  Vitest: "vitest",
 };
 
 function TechIcon({ tech }: { tech: string }) {
@@ -86,6 +92,11 @@ function TechIcon({ tech }: { tech: string }) {
     rhf: <span className="text-xs">RHF</span>,
     shadcn: <span className="text-xs">SH</span>,
     sonar: <span className="text-xs">SQ</span>,
+    tanstack: <span className="text-xs">TQ</span>,
+    table: <span className="text-xs">TT</span>,
+    auth: <span className="text-xs">NA</span>,
+    chart: <span className="text-xs">RC</span>,
+    vitest: <span className="text-xs">VT</span>,
     code: <span className="text-xs">{"{ }"}</span>,
   };
   

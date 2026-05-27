@@ -42,10 +42,16 @@ export const portfolioData = {
           tech: ["React", "TypeScript", "Micro-frontends", "Screaming Architecture", "Scrum"],
         },
         {
-          name: "CGI Capital",
+          name: "CGI Capital Landing",
           url: "https://www.cgi-capital.com/en",
           achievements: ["i18n", "animations", "performance", "formValidation", "codeQuality"],
           tech: ["Next.js", "TypeScript", "Framer Motion", "i18next", "Zod", "React Hook Form", "shadcn/ui", "SonarQube"],
+        },
+        {
+          name: "CGI Capital Platform",
+          url: "https://plataforma.cgi-capital.com",
+          achievements: ["dashboardArchitecture", "rbacMiddleware", "multiCurrency", "reportDownloads", "mobileDetection"],
+          tech: ["Next.js 14", "TypeScript", "TanStack Query", "TanStack Table", "NextAuth", "shadcn/ui", "Recharts", "Zod", "Vitest"],
         },
       ],
     },

@@ -24,6 +24,11 @@ export interface AchievementLabels {
   formValidation: string;
   containerization: string;
   codeQuality: string;
+  dashboardArchitecture: string;
+  rbacMiddleware: string;
+  multiCurrency: string;
+  reportDownloads: string;
+  mobileDetection: string;
 }
 
 export interface EducationEntry {

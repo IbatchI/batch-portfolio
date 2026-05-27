@@ -51,9 +51,13 @@
         "name": "YClick (YPF)",
         "description": "Ambitious YPF project. Frontend Team Leader. Responsibilities: implementing solutions, sprint planning, task distribution, client communication, estimations. Led the project re-engineering."
       },
-      "CGI Capital": {
-        "name": "CGI Capital",
-        "description": "Corporate landing with 95+ Lighthouse score. Full i18n (es/en) with middleware-based locale detection. Form validation with Zod + React Hook Form. Containerized deployment with Docker."
+      "CGI Capital Landing": {
+        "name": "CGI Capital Landing",
+        "description": "Corporate landing with 95+ Lighthouse score. Full i18n (es/en) with middleware-based locale detection. Form validation with Zod + React Hook Form."
+      },
+      "CGI Capital Platform": {
+        "name": "CGI Capital — Investment Platform",
+        "description": "Internal web platform for investment portfolio management. Multi-comitente account selector, real-time portfolio breakdown by asset type, paginated transaction history, multi-currency support (MEP, USD, ARS), and downloadable investment/movement reports."
       },
       "Mobile App": {
         "name": "Mobile App",
@@ -78,7 +82,12 @@
       "cicd": "CI/CD",
       "formValidation": "Form Validation",
       "containerization": "Containerization",
-      "codeQuality": "Code Quality"
+      "codeQuality": "Code Quality",
+      "dashboardArchitecture": "Dashboard Architecture",
+      "rbacMiddleware": "RBAC Middleware",
+      "multiCurrency": "Multi-Currency",
+      "reportDownloads": "Report Downloads",
+      "mobileDetection": "Mobile Detection"
     }
   },
   "skills": {
