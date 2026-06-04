@@ -71,6 +71,10 @@
         "name": "App Mobile",
         "description": "Aplicación móvil multiplataforma con arquitectura monorepo."
       },
+      "UP App": {
+        "name": "UP App — Kids Content Platform",
+        "description": "Desarrollé desde cero una app mobile multiplataforma estilo TikTok, enfocada en contenido curado para niños. Trabajamos sobre una base sólida con Expo y React Native, integrando feed de video, onboarding multi-perfil, autenticación, persistencia local, i18n y herramientas de observabilidad. El producto alcanzó un estado avanzado y recibió una auditoría muy positiva por parte de ex desarrolladores de Meta."
+      },
       "Payment Platform": {
         "name": "Plataforma de Pagos",
         "description": "Sistema de pagos con testing automatizado y pipelines de CI/CD."
@@ -110,7 +114,16 @@
       "roleBasedFlows": "Role-based Flows",
       "uxConsistency": "UX/UI Consistency",
       "componentReuse": "Component Reusability",
-      "asyncErrorHandling": "Async Error Handling"
+      "asyncErrorHandling": "Async Error Handling",
+      "mobileFromScratch": "Mobile App From Scratch",
+      "tiktokUx": "TikTok-style UX",
+      "curatedFeed": "Curated Content Feed",
+      "scalableMobileArch": "Scalable Mobile Architecture",
+      "videoStreaming": "Video Streaming Integration",
+      "multiProfileOnboarding": "Multi-profile Onboarding",
+      "localPersistence": "Local Persistence",
+      "observability": "Observability & Monitoring",
+      "metaAudit": "Meta Engineers Audit"
     }
   },
   "skills": {

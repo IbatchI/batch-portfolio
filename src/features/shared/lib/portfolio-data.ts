@@ -74,9 +74,9 @@ export const portfolioData = {
       color: "pink" as const,
       projects: [
         {
-          name: "Mobile App",
-          achievements: ["monorepo", "mobile"],
-          tech: ["React Native", "TypeScript", "Turborepo", "Expo"],
+          name: "UP App",
+          achievements: ["mobileFromScratch", "tiktokUx", "curatedFeed", "scalableMobileArch", "videoStreaming", "multiProfileOnboarding", "i18n", "localPersistence", "observability", "metaAudit"],
+          tech: ["Expo", "React Native", "TypeScript", "Expo Router", "TanStack Query", "Zustand", "React Hook Form", "i18next", "react-native-mmkv", "react-native-reanimated", "react-native-gesture-handler", "react-native-video", "Mux", "Sentry", "Jest", "React Native Testing Library"],
         },
       ],
     },

@@ -57,6 +57,7 @@ const TECH_ICONS: Record<string, string> = {
   "React Native": "smartphone",
   Turborepo: "package",
   Expo: "rocket",
+  "Expo Router": "router",
   Cypress: "check",
   "GitHub Actions": "workflow",
   Jest: "test",
@@ -88,6 +89,13 @@ const TECH_ICONS: Record<string, string> = {
   Sass: "sass",
   "Styled Components": "styled",
   Stylelint: "stylelint",
+  "react-native-mmkv": "mmkv",
+  "react-native-reanimated": "reanimated",
+  "react-native-gesture-handler": "gesture",
+  "react-native-video": "video",
+  Mux: "mux",
+  Sentry: "sentry",
+  "React Native Testing Library": "testlib",
 };
 
 function TechIcon({ tech }: { tech: string }) {
@@ -134,6 +142,12 @@ function TechIcon({ tech }: { tech: string }) {
     sass: <span className="text-xs">SC</span>,
     styled: <span className="text-xs">SC</span>,
     stylelint: <span className="text-xs">SL</span>,
+    mmkv: <span className="text-xs">MK</span>,
+    reanimated: <span className="text-xs">RA</span>,
+    gesture: <span className="text-xs">GH</span>,
+    video: <span className="text-xs">VD</span>,
+    mux: <span className="text-xs">MX</span>,
+    sentry: <span className="text-xs">SN</span>,
     code: <span className="text-xs">{"{ }"}</span>,
   };
   

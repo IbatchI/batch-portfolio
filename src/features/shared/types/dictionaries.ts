@@ -44,6 +44,15 @@ export interface AchievementLabels {
   uxConsistency: string;
   componentReuse: string;
   asyncErrorHandling: string;
+  mobileFromScratch: string;
+  tiktokUx: string;
+  curatedFeed: string;
+  scalableMobileArch: string;
+  videoStreaming: string;
+  multiProfileOnboarding: string;
+  localPersistence: string;
+  observability: string;
+  metaAudit: string;
 }
 
 export interface EducationEntry {

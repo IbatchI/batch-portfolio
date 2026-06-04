@@ -71,6 +71,10 @@
         "name": "Mobile App",
         "description": "Cross-platform mobile application with monorepo architecture."
       },
+      "UP App": {
+        "name": "UP App — Kids Content Platform",
+        "description": "I helped build from scratch a cross-platform mobile app inspired by TikTok, focused on curated content for kids. We built it on a solid Expo + React Native foundation, integrating video feed experiences, multi-profile onboarding, authentication, local persistence, i18n, and observability tooling. The product reached an advanced stage and received very positive feedback during an audit conducted by former Meta engineers."
+      },
       "Payment Platform": {
         "name": "Payment Platform",
         "description": "Payment system with automated testing and CI/CD pipelines."
@@ -110,7 +114,16 @@
       "roleBasedFlows": "Role-based Flows",
       "uxConsistency": "UX/UI Consistency",
       "componentReuse": "Component Reusability",
-      "asyncErrorHandling": "Async Error Handling"
+      "asyncErrorHandling": "Async Error Handling",
+      "mobileFromScratch": "Mobile App From Scratch",
+      "tiktokUx": "TikTok-style UX",
+      "curatedFeed": "Curated Content Feed",
+      "scalableMobileArch": "Scalable Mobile Architecture",
+      "videoStreaming": "Video Streaming Integration",
+      "multiProfileOnboarding": "Multi-profile Onboarding",
+      "localPersistence": "Local Persistence",
+      "observability": "Observability & Monitoring",
+      "metaAudit": "Meta Engineers Audit"
     }
   },
   "skills": {
