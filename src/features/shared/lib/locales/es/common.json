@@ -63,6 +63,10 @@
         "name": "Catalogo de Filtros eCommerce",
         "description": "Lideré desde cero la reingeniería de un eCommerce de filtros y repuestos automotrices, definiendo arquitectura frontend, estándares técnicos y roadmap de implementación. Implementamos autenticación robusta, control de roles, catálogo, stock, carrito y flujo de compra completo, priorizando escalabilidad, mantenibilidad y calidad de código."
       },
+      "EDEMSA Contratistas": {
+        "name": "EDEMSA Contratistas — Feature Transversal",
+        "description": "Fui responsable de construir una feature transversal para la plataforma de contratistas de EDEMSA, con impacto en múltiples módulos y foco en formularios complejos. Implementé validaciones de negocio avanzadas, flujos por rol, integración con múltiples servicios backend y manejo de archivos, asegurando consistencia funcional, mantenibilidad y escalabilidad en toda la aplicación."
+      },
       "Mobile App": {
         "name": "App Mobile",
         "description": "Aplicación móvil multiplataforma con arquitectura monorepo."
@@ -97,7 +101,16 @@
       "codeStandards": "Code Standards",
       "authRbac": "Auth & RBAC",
       "cartCheckout": "Cart + Checkout",
-      "stockControl": "Stock Control"
+      "stockControl": "Stock Control",
+      "crossFeature": "Cross-cutting Feature",
+      "complexForms": "Complex Forms Architecture",
+      "businessValidations": "Business Validations",
+      "multipartIntegration": "Multipart Integration",
+      "multiEndpoint": "Multi-endpoint Integration",
+      "roleBasedFlows": "Role-based Flows",
+      "uxConsistency": "UX/UI Consistency",
+      "componentReuse": "Component Reusability",
+      "asyncErrorHandling": "Async Error Handling"
     }
   },
   "skills": {

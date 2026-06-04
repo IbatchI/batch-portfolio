@@ -35,6 +35,15 @@ export interface AchievementLabels {
   authRbac: string;
   cartCheckout: string;
   stockControl: string;
+  crossFeature: string;
+  complexForms: string;
+  businessValidations: string;
+  multipartIntegration: string;
+  multiEndpoint: string;
+  roleBasedFlows: string;
+  uxConsistency: string;
+  componentReuse: string;
+  asyncErrorHandling: string;
 }
 
 export interface EducationEntry {

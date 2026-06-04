@@ -45,6 +45,7 @@ function getTechColor(index: number): string {
 
 const TECH_ICONS: Record<string, string> = {
   React: "gear",
+  "React 18": "gear",
   TypeScript: "scroll",
   "Next.js": "shield",
   "Next.js 14": "shield",
@@ -70,6 +71,7 @@ const TECH_ICONS: Record<string, string> = {
   Vitest: "vitest",
   Vite: "vite",
   "React Router": "router",
+  "React Router DOM 6": "router",
   "Tailwind CSS": "tailwind",
   "Radix UI": "radix",
   Zustand: "zustand",
@@ -78,6 +80,14 @@ const TECH_ICONS: Record<string, string> = {
   Husky: "husky",
   ESLint: "eslint",
   Prettier: "prettier",
+  "Material UI": "mui",
+  Formik: "formik",
+  Yup: "yup",
+  "React Table": "table",
+  "date-fns": "datefns",
+  Sass: "sass",
+  "Styled Components": "styled",
+  Stylelint: "stylelint",
 };
 
 function TechIcon({ tech }: { tech: string }) {
@@ -117,6 +127,13 @@ function TechIcon({ tech }: { tech: string }) {
     husky: <span className="text-xs">HK</span>,
     eslint: <span className="text-xs">ES</span>,
     prettier: <span className="text-xs">PR</span>,
+    mui: <span className="text-xs">MUI</span>,
+    formik: <span className="text-xs">FK</span>,
+    yup: <span className="text-xs">YP</span>,
+    datefns: <span className="text-xs">DF</span>,
+    sass: <span className="text-xs">SC</span>,
+    styled: <span className="text-xs">SC</span>,
+    stylelint: <span className="text-xs">SL</span>,
     code: <span className="text-xs">{"{ }"}</span>,
   };
   

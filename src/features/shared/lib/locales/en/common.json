@@ -63,6 +63,10 @@
         "name": "Filters eCommerce Catalog",
         "description": "I led from scratch the reengineering of an automotive filters/spare-parts eCommerce, defining frontend architecture, engineering standards, and delivery roadmap. We implemented robust auth, access control, catalog, stock control, cart and checkout flow, with a strong focus on scalability, maintainability, and code quality."
       },
+      "EDEMSA Contratistas": {
+        "name": "EDEMSA Contractors — Cross-cutting Feature",
+        "description": "I was responsible for building a cross-cutting feature for EDEMSA's contractor platform, impacting multiple business modules with a strong focus on complex forms. I implemented advanced business validations, role-based flows, multi-endpoint backend integration, and file handling, ensuring functional consistency, maintainability, and scalability across the application."
+      },
       "Mobile App": {
         "name": "Mobile App",
         "description": "Cross-platform mobile application with monorepo architecture."
@@ -97,7 +101,16 @@
       "codeStandards": "Code Standards",
       "authRbac": "Auth & RBAC",
       "cartCheckout": "Cart + Checkout",
-      "stockControl": "Stock Control"
+      "stockControl": "Stock Control",
+      "crossFeature": "Cross-cutting Feature",
+      "complexForms": "Complex Forms Architecture",
+      "businessValidations": "Business Validations",
+      "multipartIntegration": "Multipart Integration",
+      "multiEndpoint": "Multi-endpoint Integration",
+      "roleBasedFlows": "Role-based Flows",
+      "uxConsistency": "UX/UI Consistency",
+      "componentReuse": "Component Reusability",
+      "asyncErrorHandling": "Async Error Handling"
     }
   },
   "skills": {

@@ -58,6 +58,11 @@ export const portfolioData = {
           achievements: ["e2eLeadership", "reengineering", "featureArchitecture", "codeStandards", "authRbac", "cartCheckout", "stockControl", "codeQuality", "sprintPlanning", "clientCommunication"],
           tech: ["React", "TypeScript", "Vite", "React Router", "Tailwind CSS", "Radix UI", "TanStack Query", "TanStack Table", "Zustand", "Axios", "React Hook Form", "Zod", "Vitest", "Testing Library", "SonarQube", "Husky", "ESLint", "Prettier", "Screaming Architecture", "Scrum"],
         },
+        {
+          name: "EDEMSA Contratistas",
+          achievements: ["crossFeature", "complexForms", "businessValidations", "multipartIntegration", "multiEndpoint", "roleBasedFlows", "uxConsistency", "componentReuse", "asyncErrorHandling"],
+          tech: ["React 18", "React Router DOM 6", "Material UI", "Axios", "Formik", "Yup", "React Table", "date-fns", "Sass", "Styled Components", "Zustand", "ESLint", "Stylelint", "Husky"],
+        },
       ],
     },
     {
