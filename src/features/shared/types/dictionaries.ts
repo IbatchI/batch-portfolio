@@ -29,6 +29,12 @@ export interface AchievementLabels {
   multiCurrency: string;
   reportDownloads: string;
   mobileDetection: string;
+  e2eLeadership: string;
+  featureArchitecture: string;
+  codeStandards: string;
+  authRbac: string;
+  cartCheckout: string;
+  stockControl: string;
 }
 
 export interface EducationEntry {

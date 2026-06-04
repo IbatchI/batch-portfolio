@@ -53,6 +53,11 @@ export const portfolioData = {
           achievements: ["dashboardArchitecture", "rbacMiddleware", "multiCurrency", "reportDownloads", "mobileDetection"],
           tech: ["Next.js 14", "TypeScript", "TanStack Query", "TanStack Table", "NextAuth", "shadcn/ui", "Recharts", "Zod", "Vitest"],
         },
+        {
+          name: "Midas Filters Commerce",
+          achievements: ["e2eLeadership", "reengineering", "featureArchitecture", "codeStandards", "authRbac", "cartCheckout", "stockControl", "codeQuality", "sprintPlanning", "clientCommunication"],
+          tech: ["React", "TypeScript", "Vite", "React Router", "Tailwind CSS", "Radix UI", "TanStack Query", "TanStack Table", "Zustand", "Axios", "React Hook Form", "Zod", "Vitest", "Testing Library", "SonarQube", "Husky", "ESLint", "Prettier", "Screaming Architecture", "Scrum"],
+        },
       ],
     },
     {

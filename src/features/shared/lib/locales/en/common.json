@@ -59,6 +59,10 @@
         "name": "CGI Capital — Investment Platform",
         "description": "Internal web platform for investment portfolio management. Multi-comitente account selector, real-time portfolio breakdown by asset type, paginated transaction history, multi-currency support (MEP, USD, ARS), and downloadable investment/movement reports."
       },
+      "Midas Filters Commerce": {
+        "name": "Filters eCommerce Catalog",
+        "description": "I led from scratch the reengineering of an automotive filters/spare-parts eCommerce, defining frontend architecture, engineering standards, and delivery roadmap. We implemented robust auth, access control, catalog, stock control, cart and checkout flow, with a strong focus on scalability, maintainability, and code quality."
+      },
       "Mobile App": {
         "name": "Mobile App",
         "description": "Cross-platform mobile application with monorepo architecture."
@@ -87,7 +91,13 @@
       "rbacMiddleware": "RBAC Middleware",
       "multiCurrency": "Multi-Currency",
       "reportDownloads": "Report Downloads",
-      "mobileDetection": "Mobile Detection"
+      "mobileDetection": "Mobile Detection",
+      "e2eLeadership": "E2E Tech Leadership",
+      "featureArchitecture": "Feature Architecture",
+      "codeStandards": "Code Standards",
+      "authRbac": "Auth & RBAC",
+      "cartCheckout": "Cart + Checkout",
+      "stockControl": "Stock Control"
     }
   },
   "skills": {

@@ -68,6 +68,16 @@ const TECH_ICONS: Record<string, string> = {
   NextAuth: "auth",
   Recharts: "chart",
   Vitest: "vitest",
+  Vite: "vite",
+  "React Router": "router",
+  "Tailwind CSS": "tailwind",
+  "Radix UI": "radix",
+  Zustand: "zustand",
+  Axios: "axios",
+  "Testing Library": "testlib",
+  Husky: "husky",
+  ESLint: "eslint",
+  Prettier: "prettier",
 };
 
 function TechIcon({ tech }: { tech: string }) {
@@ -97,6 +107,16 @@ function TechIcon({ tech }: { tech: string }) {
     auth: <span className="text-xs">NA</span>,
     chart: <span className="text-xs">RC</span>,
     vitest: <span className="text-xs">VT</span>,
+    vite: <span className="text-xs">VI</span>,
+    router: <span className="text-xs">RR</span>,
+    tailwind: <span className="text-xs">TW</span>,
+    radix: <span className="text-xs">RX</span>,
+    zustand: <span className="text-xs">ZU</span>,
+    axios: <span className="text-xs">AX</span>,
+    testlib: <span className="text-xs">TL</span>,
+    husky: <span className="text-xs">HK</span>,
+    eslint: <span className="text-xs">ES</span>,
+    prettier: <span className="text-xs">PR</span>,
     code: <span className="text-xs">{"{ }"}</span>,
   };
   
