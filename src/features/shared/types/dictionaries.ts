@@ -53,6 +53,11 @@ export interface AchievementLabels {
   localPersistence: string;
   observability: string;
   metaAudit: string;
+  scrollStorytelling: string;
+  heroImplementation: string;
+  crossRepoConsistency: string;
+  cmsIntegration: string;
+  animationSystems: string;
 }
 
 export interface EducationEntry {
