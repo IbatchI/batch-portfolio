@@ -31,22 +31,31 @@
     "achievementsUnlocked": "// ACHIEVEMENTS UNLOCKED",
     "jobs": [
       {
+        "company": "Mindata",
+        "role": "Senior Frontend · Angular",
+        "period": "May 2026 - Present"
+      },
+      {
         "company": "Midas Consultores",
         "role": "Frontend Team Lead · Architecture · Clean Code",
-        "period": "May 2021 - Present"
+        "period": "May 2021 - Apr 2026"
       },
       {
         "company": "Caramel Point",
-        "role": "React Native · Monorepo · Mobile",
+        "role": "Frontend · React · Next.js · Web3 · Mobile",
         "period": "Dec 2024 - Apr 2025"
       },
       {
         "company": "Agripay",
-        "role": "TypeScript · Testing · CI/CD",
+        "role": "Frontend · Angular · E2E · Technical Decisions",
         "period": "Sep 2021 - May 2022"
       }
     ],
     "projects": {
+      "RIU Hotels Website": {
+        "name": "RIU Hotels & Resorts — Official Website",
+        "description": "Mindata is a digital services consultancy with an agile approach and distributed teams. As a senior frontend developer in Angular, I work on the official RIU Hotels & Resorts website (riu.com/es): a high-traffic, multilingual site for a global hotel chain, with a focus on code quality, frontend architecture, and user experience at scale."
+      },
       "YClick": {
         "name": "YClick (YPF)",
         "description": "Ambitious YPF project. Frontend Team Leader. Responsibilities: implementing solutions, sprint planning, task distribution, client communication, estimations. Led the project re-engineering."
@@ -75,9 +84,13 @@
         "name": "UP App — Kids Content Platform",
         "description": "I helped build from scratch a cross-platform mobile app inspired by TikTok, focused on curated content for kids. We built it on a solid Expo + React Native foundation, integrating video feed experiences, multi-profile onboarding, authentication, local persistence, i18n, and observability tooling. The product reached an advanced stage and received very positive feedback during an audit conducted by former Meta engineers."
       },
-      "Payment Platform": {
-        "name": "Payment Platform",
-        "description": "Payment system with automated testing and CI/CD pipelines."
+      "Core DAO Ecosystem": {
+        "name": "Core DAO — Web Ecosystem",
+        "description": "Multifaceted project across Core DAO's web ecosystem (Bitcoin DeFi blockchain). I redesigned the coredao.org homepage as a scroll storytelling experience: full-viewport sections, GSAP + Lenis + ScrollTrigger animations, Spline 3D hero, and live on-chain metrics. I also worked on stake.coredao.org (landing + staking dApp), bridge.coredao.org (cross-chain bridge), and other organization properties, maintaining visual and animation consistency across repos."
+      },
+      "Agripay Back Office": {
+        "name": "Agripay — Back Office",
+        "description": "Agripay is a Pampas-born fintech with 30+ years of agro experience: they created the world's first non-monetary wallet to turn grains into transactional currency. I joined the Angular frontend team, making technical decisions and setting up E2E testing with Cypress from scratch. We built the web back office with functional parity to the mobile app, digitizing the agro payment circuit alongside mobile and backend teams. agripay.ar is a company reference; the landing page was outside my scope."
       }
     },
     "achievements": {
@@ -123,7 +136,12 @@
       "multiProfileOnboarding": "Multi-profile Onboarding",
       "localPersistence": "Local Persistence",
       "observability": "Observability & Monitoring",
-      "metaAudit": "Meta Engineers Audit"
+      "metaAudit": "Meta Engineers Audit",
+      "scrollStorytelling": "Scroll Storytelling",
+      "animationSystems": "Animation Systems",
+      "heroImplementation": "Hero & Interactive 3D",
+      "cmsIntegration": "CMS Integration (Strapi)",
+      "crossRepoConsistency": "Cross-repo Consistency"
     }
   },
   "skills": {

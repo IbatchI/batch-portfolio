@@ -31,22 +31,31 @@
     "achievementsUnlocked": "// LOGROS DESBLOQUEADOS",
     "jobs": [
       {
+        "company": "Mindata",
+        "role": "Senior Frontend · Angular",
+        "period": "May 2026 - Presente"
+      },
+      {
         "company": "Midas Consultores",
         "role": "Team Lead Frontend · Arquitectura · Clean Code",
-        "period": "May 2021 - Presente"
+        "period": "May 2021 - Abr 2026"
       },
       {
         "company": "Caramel Point",
-        "role": "React Native · Monorepo · Mobile",
+        "role": "Frontend · React · Next.js · Web3 · Mobile",
         "period": "Dic 2024 - Apr 2025"
       },
       {
         "company": "Agripay",
-        "role": "TypeScript · Testing · CI/CD",
+        "role": "Frontend · Angular · E2E · Decisiones Técnicas",
         "period": "Sep 2021 - May 2022"
       }
     ],
     "projects": {
+      "RIU Hotels Website": {
+        "name": "RIU Hotels & Resorts — Web Oficial",
+        "description": "Mindata es una consultora de servicios digitales con enfoque ágil y equipos distribuidos. Como desarrollador senior frontend en Angular, trabajo en la web oficial de RIU Hotels & Resorts (riu.com/es): sitio multilenguaje de alto tráfico para una cadena hotelera global, con foco en calidad de código, arquitectura frontend y experiencia de usuario a escala."
+      },
       "YClick": {
         "name": "YClick (YPF)",
         "description": "Proyecto ambicioso de YPF. Team Leader del equipo frontend. Responsabilidades: implementar soluciones, planificar sprints, distribuir tareas, comunicación con cliente, estimaciones. Lideré la reingeniería del proyecto."
@@ -75,9 +84,13 @@
         "name": "UP App — Kids Content Platform",
         "description": "Desarrollé desde cero una app mobile multiplataforma estilo TikTok, enfocada en contenido curado para niños. Trabajamos sobre una base sólida con Expo y React Native, integrando feed de video, onboarding multi-perfil, autenticación, persistencia local, i18n y herramientas de observabilidad. El producto alcanzó un estado avanzado y recibió una auditoría muy positiva por parte de ex desarrolladores de Meta."
       },
-      "Payment Platform": {
-        "name": "Plataforma de Pagos",
-        "description": "Sistema de pagos con testing automatizado y pipelines de CI/CD."
+      "Core DAO Ecosystem": {
+        "name": "Core DAO — Web Ecosystem",
+        "description": "Proyecto multifacético en el ecosistema web de Core DAO (blockchain Bitcoin DeFi). Rediseñé la homepage de coredao.org como experiencia de scroll storytelling: secciones full-viewport, animaciones con GSAP + Lenis + ScrollTrigger, hero 3D con Spline y métricas on-chain en vivo. También trabajé en stake.coredao.org (landing + dApp de staking), bridge.coredao.org (bridge cross-chain) y otras propiedades de la organización, manteniendo consistencia visual y de animaciones entre repos."
+      },
+      "Agripay Back Office": {
+        "name": "Agripay — Back Office",
+        "description": "Agripay es una fintech pampeana con más de 30 años de experiencia en el agro: crearon la primera billetera no monetaria del mundo para convertir granos en moneda transaccional. Integré el equipo frontend en Angular, tomando decisiones técnicas y configurando desde cero el testing E2E con Cypress. Desarrollamos el back office web con paridad funcional respecto a la app mobile, digitalizando el circuito de pagos del agro junto a equipos de mobile y backend. agripay.ar es referencia de la empresa; la landing no fue parte de mi scope."
       }
     },
     "achievements": {
@@ -122,8 +135,13 @@
       "videoStreaming": "Video Streaming Integration",
       "multiProfileOnboarding": "Multi-profile Onboarding",
       "localPersistence": "Local Persistence",
-      "observability": "Observability & Monitoring",
-      "metaAudit": "Meta Engineers Audit"
+      "observability": "Observabilidad & Monitoring",
+      "metaAudit": "Meta Engineers Audit",
+      "scrollStorytelling": "Scroll Storytelling",
+      "animationSystems": "Sistemas de Animación",
+      "heroImplementation": "Hero & 3D Interactivo",
+      "cmsIntegration": "Integración CMS (Strapi)",
+      "crossRepoConsistency": "Consistencia Multi-repo"
     }
   },
   "skills": {

@@ -28,10 +28,26 @@ export const portfolioData = {
 
   experience: [
     {
+      company: "Mindata",
+      xp: "+400 XP",
+      period: "May 2026 - Presente",
+      status: "ACTIVA" as const,
+      icon: "🌐",
+      color: "blue" as const,
+      projects: [
+        {
+          name: "RIU Hotels Website",
+          url: "https://www.riu.com/es",
+          achievements: ["i18n", "performance", "codeStandards", "featureArchitecture"],
+          tech: ["Angular", "TypeScript"],
+        },
+      ],
+    },
+    {
       company: "Midas Consultores",
       xp: "+2400 XP",
-      period: "May 2021 - Presente",
-      status: "ACTIVA" as const,
+      period: "May 2021 - Abr 2026",
+      status: "COMPLETA" as const,
       icon: "⚡",
       color: "yellow" as const,
       projects: [
@@ -78,6 +94,12 @@ export const portfolioData = {
           achievements: ["mobileFromScratch", "tiktokUx", "curatedFeed", "scalableMobileArch", "videoStreaming", "multiProfileOnboarding", "i18n", "localPersistence", "observability", "metaAudit"],
           tech: ["Expo", "React Native", "TypeScript", "Expo Router", "TanStack Query", "Zustand", "React Hook Form", "i18next", "react-native-mmkv", "react-native-reanimated", "react-native-gesture-handler", "react-native-video", "Mux", "Sentry", "Jest", "React Native Testing Library"],
         },
+        {
+          name: "Core DAO Ecosystem",
+          url: "https://coredao.org/",
+          achievements: ["scrollStorytelling", "animationSystems", "heroImplementation", "cmsIntegration", "crossRepoConsistency", "i18n", "performance"],
+          tech: ["Next.js 14", "React 18", "TypeScript", "GSAP", "Lenis", "Spline", "SCSS", "Framer Motion", "Vue 3", "Strapi", "TanStack Query", "Wagmi"],
+        },
       ],
     },
     {
@@ -89,9 +111,10 @@ export const portfolioData = {
       color: "green" as const,
       projects: [
         {
-          name: "Payment Platform",
-          achievements: ["testing", "cicd"],
-          tech: ["TypeScript", "Cypress", "GitHub Actions", "Jest"],
+          name: "Agripay Back Office",
+          url: "https://agripay.ar/",
+          achievements: ["e2eLeadership", "codeStandards", "featureArchitecture", "businessValidations", "testing", "cicd"],
+          tech: ["Angular", "TypeScript", "Cypress", "Jest", "GitHub Actions"],
         },
       ],
     },
@@ -121,5 +144,5 @@ export const portfolioData = {
   },
 } as const;
 
-export type ExperienceColor = "yellow" | "pink" | "green";
+export type ExperienceColor = "yellow" | "pink" | "green" | "blue";
 export type ExperienceStatus = "ACTIVA" | "COMPLETA";
