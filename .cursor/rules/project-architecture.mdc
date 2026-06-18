@@ -1,0 +1,37 @@
+---
+description: Feature-sliced architecture and file naming for batch-portfolio
+alwaysApply: true
+---
+
+# Project architecture
+
+## Feature layout
+
+- Domain code lives in `src/features/<feature>/` (boot, title, game, menu, portfolio, shared).
+- Each feature exposes its public API via `index.ts`.
+- Cross-cutting infra (i18n, data, hooks, shadcn UI) lives in `src/features/shared/`.
+
+## File naming
+
+- **Files:** kebab-case (`boot-screen.tsx`, `portfolio-game.tsx`, `experience-content.tsx`).
+- **Exports:** PascalCase (`BootScreen`, `PortfolioGame`, `ExperienceContent`).
+- Do not use PascalCase filenames for components (legacy `BootScreen.tsx` was renamed).
+
+## Screen + subcomponents
+
+Complex screens use a nested `components/` folder:
+
+```
+game-screen/
+├── game-screen.tsx          # orchestrator
+└── components/
+    ├── game-footer.tsx      # one export per file
+    └── konami-modal.tsx
+```
+
+Extract reusable or non-trivial React components to sibling files under `components/` (see `skill-bar.tsx`, `tech-icon.tsx`). Keep screen files as thin orchestrators.
+
+## Cursor skills
+
+- Personal Agent Skills go in `~/.cursor/skills/`, not in this repo.
+- `.agents/` is gitignored; do not add skills to the project.

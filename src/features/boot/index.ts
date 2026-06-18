@@ -1,1 +1,1 @@
-export { BootScreen } from "./components/BootScreen";
+export { BootScreen } from "./components/boot-screen";

@@ -1,1 +1,1 @@
-export { PortfolioGame } from "./components/PortfolioGame";
+export { PortfolioGame } from "./components/portfolio-game";
