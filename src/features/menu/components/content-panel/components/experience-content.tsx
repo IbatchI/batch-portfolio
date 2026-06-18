@@ -4,6 +4,8 @@ import { useState } from "react";
 import { portfolioData, type ExperienceColor } from "@/src/features/shared/lib/portfolio-data";
 import { useDictionary } from "@/src/features/shared/components/dictionary-provider";
 import type { AchievementLabels } from "@/src/features/shared/types/dictionaries";
+import { ExperienceCompanyIcon } from "./experience-company-icon";
+import { TechIcon } from "./tech-icon";
 
 function getExpIconClassName(color: ExperienceColor): string {
   const base = "w-10 h-10 flex items-center justify-center text-lg pixel-border shrink-0";
@@ -14,32 +16,6 @@ function getExpIconClassName(color: ExperienceColor): string {
     blue: "bg-primary/20 border-primary/50",
   };
   return `${base} ${colors[color]}`;
-}
-
-function ExperienceCompanyIcon({
-  logo,
-  icon,
-  company,
-  className,
-}: {
-  logo?: string;
-  icon: string;
-  company: string;
-  className: string;
-}) {
-  return (
-    <div className={className}>
-      {logo ? (
-        <img
-          src={logo}
-          alt={`${company} logo`}
-          className="w-full h-full object-contain p-1"
-        />
-      ) : (
-        icon
-      )}
-    </div>
-  );
 }
 
 function getStatusClassName(isActive: boolean): string {
@@ -70,130 +46,10 @@ function getTechColor(index: number): string {
   return colors[index % colors.length];
 }
 
-const TECH_ICONS: Record<string, string> = {
-  React: "gear",
-  "React 18": "gear",
-  TypeScript: "scroll",
-  Angular: "angular",
-  "Next.js": "shield",
-  "Next.js 14": "shield",
-  "Micro-frontends": "layers",
-  "Screaming Architecture": "diamond",
-  Scrum: "users",
-  "Framer Motion": "sparkles",
-  i18next: "globe",
-  "React Native": "smartphone",
-  Turborepo: "package",
-  Expo: "rocket",
-  "Expo Router": "router",
-  Cypress: "check",
-  "GitHub Actions": "workflow",
-  Jest: "test",
-  Zod: "zod",
-  "React Hook Form": "rhf",
-  "shadcn/ui": "shadcn",
-  SonarQube: "sonar",
-  "TanStack Query": "tanstack",
-  "TanStack Table": "table",
-  NextAuth: "auth",
-  Recharts: "chart",
-  Vitest: "vitest",
-  Vite: "vite",
-  "React Router": "router",
-  "React Router DOM 6": "router",
-  "Tailwind CSS": "tailwind",
-  "Radix UI": "radix",
-  Zustand: "zustand",
-  Axios: "axios",
-  "Testing Library": "testlib",
-  Husky: "husky",
-  ESLint: "eslint",
-  Prettier: "prettier",
-  "Material UI": "mui",
-  Formik: "formik",
-  Yup: "yup",
-  "React Table": "table",
-  "date-fns": "datefns",
-  Sass: "sass",
-  SCSS: "sass",
-  "Styled Components": "styled",
-  GSAP: "gsap",
-  Lenis: "lenis",
-  Spline: "spline",
-  "Vue 3": "vue",
-  Strapi: "strapi",
-  Wagmi: "wagmi",
-  Stylelint: "stylelint",
-  "react-native-mmkv": "mmkv",
-  "react-native-reanimated": "reanimated",
-  "react-native-gesture-handler": "gesture",
-  "react-native-video": "video",
-  Mux: "mux",
-  Sentry: "sentry",
-  "React Native Testing Library": "testlib",
-};
-
-function TechIcon({ tech }: { tech: string }) {
-  const iconType = TECH_ICONS[tech] || "code";
-  
-  const icons: Record<string, React.ReactNode> = {
-    gear: <span className="text-xs">{"<>"}</span>,
-    scroll: <span className="text-xs">TS</span>,
-    angular: <span className="text-xs">NG</span>,
-    shield: <span className="text-xs">N</span>,
-    layers: <span className="text-xs">MF</span>,
-    diamond: <span className="text-xs">SA</span>,
-    users: <span className="text-xs">AG</span>,
-    sparkles: <span className="text-xs">FM</span>,
-    globe: <span className="text-xs">i18</span>,
-    smartphone: <span className="text-xs">RN</span>,
-    package: <span className="text-xs">TR</span>,
-    rocket: <span className="text-xs">EX</span>,
-    check: <span className="text-xs">CY</span>,
-    workflow: <span className="text-xs">GH</span>,
-    test: <span className="text-xs">JT</span>,
-    zod: <span className="text-xs">ZD</span>,
-    rhf: <span className="text-xs">RHF</span>,
-    shadcn: <span className="text-xs">SH</span>,
-    sonar: <span className="text-xs">SQ</span>,
-    tanstack: <span className="text-xs">TQ</span>,
-    table: <span className="text-xs">TT</span>,
-    auth: <span className="text-xs">NA</span>,
-    chart: <span className="text-xs">RC</span>,
-    vitest: <span className="text-xs">VT</span>,
-    vite: <span className="text-xs">VI</span>,
-    router: <span className="text-xs">RR</span>,
-    tailwind: <span className="text-xs">TW</span>,
-    radix: <span className="text-xs">RX</span>,
-    zustand: <span className="text-xs">ZU</span>,
-    axios: <span className="text-xs">AX</span>,
-    testlib: <span className="text-xs">TL</span>,
-    husky: <span className="text-xs">HK</span>,
-    eslint: <span className="text-xs">ES</span>,
-    prettier: <span className="text-xs">PR</span>,
-    mui: <span className="text-xs">MUI</span>,
-    formik: <span className="text-xs">FK</span>,
-    yup: <span className="text-xs">YP</span>,
-    datefns: <span className="text-xs">DF</span>,
-    sass: <span className="text-xs">SC</span>,
-    styled: <span className="text-xs">SC</span>,
-    gsap: <span className="text-xs">GS</span>,
-    lenis: <span className="text-xs">LN</span>,
-    spline: <span className="text-xs">SP</span>,
-    vue: <span className="text-xs">V3</span>,
-    strapi: <span className="text-xs">ST</span>,
-    wagmi: <span className="text-xs">WG</span>,
-    stylelint: <span className="text-xs">SL</span>,
-    mmkv: <span className="text-xs">MK</span>,
-    reanimated: <span className="text-xs">RA</span>,
-    gesture: <span className="text-xs">GH</span>,
-    video: <span className="text-xs">VD</span>,
-    mux: <span className="text-xs">MX</span>,
-    sentry: <span className="text-xs">SN</span>,
-    code: <span className="text-xs">{"{ }"}</span>,
-  };
-  
-  return icons[iconType];
+function getExperienceLogo(
+  expData: (typeof portfolioData.experience)[number],
+): string | undefined {
+  return "logo" in expData ? expData.logo : undefined;
 }
 
 export function ExperienceContent() {
@@ -224,13 +80,12 @@ export function ExperienceContent() {
             key={job.company}
             className="pixel-border border-border bg-background/50 overflow-hidden transition-all duration-300"
           >
-            {/* Header - clickeable */}
             <button
               onClick={() => toggleJob(index)}
               className="w-full p-3 flex items-start gap-3 hover:bg-foreground/5 transition-colors text-left"
             >
               <ExperienceCompanyIcon
-                logo={"logo" in expData ? expData.logo : undefined}
+                logo={getExperienceLogo(expData)}
                 icon={expData.icon}
                 company={job.company}
                 className={getExpIconClassName(expData.color)}
@@ -250,15 +105,13 @@ export function ExperienceContent() {
               </div>
             </button>
 
-            {/* Expanded content - projects, achievements, tech */}
             {isExpanded && expData.projects && (
               <div className="border-t border-border/50 bg-background/30">
-                {expData.projects.map((project, pIndex) => {
+                {expData.projects.map((project) => {
                   const projectInfo = dictionary.experience.projects[project.name];
-                  
+
                   return (
-                    <div key={pIndex} className="p-3 border-b border-border/30 last:border-b-0">
-                      {/* Project name & link */}
+                    <div key={project.name} className="p-3 border-b border-border/30 last:border-b-0">
                       <div className="flex items-center gap-2 mb-2">
                         <span className="text-primary text-xs">{">"}</span>
                         {project.url ? (
@@ -280,14 +133,12 @@ export function ExperienceContent() {
                         )}
                       </div>
 
-                      {/* Project description */}
                       {projectInfo?.description && (
                         <p className="text-xs text-muted-foreground mb-3 pl-4 leading-relaxed">
                           {projectInfo.description}
                         </p>
                       )}
 
-                      {/* Achievements */}
                       {project.achievements && project.achievements.length > 0 && (
                         <div className="pl-4 mb-3">
                           <div className="text-xs text-primary/70 mb-2 font-mono">
@@ -299,7 +150,7 @@ export function ExperienceContent() {
                               const label = dictionary.experience.achievements[achievementKey] || achievement;
                               return (
                                 <span
-                                  key={aIndex}
+                                  key={achievement}
                                   className={`text-xs px-2 py-0.5 border ${getAchievementColor(aIndex)}`}
                                 >
                                   {"["} {label} {"]"}
@@ -310,7 +161,6 @@ export function ExperienceContent() {
                         </div>
                       )}
 
-                      {/* Tech Stack as Loot */}
                       {project.tech && project.tech.length > 0 && (
                         <div className="pl-4">
                           <div className="text-xs text-secondary/70 mb-2 font-mono">
@@ -319,7 +169,7 @@ export function ExperienceContent() {
                           <div className="flex flex-wrap gap-2">
                             {project.tech.map((tech, tIndex) => (
                               <div
-                                key={tIndex}
+                                key={tech}
                                 className="flex items-center gap-1.5 text-xs bg-background/50 px-2 py-1 border border-border/50"
                               >
                                 <span className={`${getTechColor(tIndex)} font-mono`}>
