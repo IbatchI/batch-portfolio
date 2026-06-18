@@ -16,6 +16,32 @@ function getExpIconClassName(color: ExperienceColor): string {
   return `${base} ${colors[color]}`;
 }
 
+function ExperienceCompanyIcon({
+  logo,
+  icon,
+  company,
+  className,
+}: {
+  logo?: string;
+  icon: string;
+  company: string;
+  className: string;
+}) {
+  return (
+    <div className={className}>
+      {logo ? (
+        <img
+          src={logo}
+          alt={`${company} logo`}
+          className="w-full h-full object-contain p-1"
+        />
+      ) : (
+        icon
+      )}
+    </div>
+  );
+}
+
 function getStatusClassName(isActive: boolean): string {
   const base = "text-xs px-2 py-1 shrink-0";
   const active = "bg-secondary/20 text-secondary border border-secondary/50";
@@ -203,9 +229,12 @@ export function ExperienceContent() {
               onClick={() => toggleJob(index)}
               className="w-full p-3 flex items-start gap-3 hover:bg-foreground/5 transition-colors text-left"
             >
-              <div className={getExpIconClassName(expData.color)}>
-                {expData.icon}
-              </div>
+              <ExperienceCompanyIcon
+                logo={"logo" in expData ? expData.logo : undefined}
+                icon={expData.icon}
+                company={job.company}
+                className={getExpIconClassName(expData.color)}
+              />
               <div className="flex-1 min-w-0">
                 <div className="text-xs text-foreground font-bold">{job.company}</div>
                 <div className="text-xs text-muted-foreground mt-1 font-mono">{job.role}</div>

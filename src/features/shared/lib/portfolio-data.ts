@@ -33,6 +33,7 @@ export const portfolioData = {
       period: "May 2026 - Presente",
       status: "ACTIVA" as const,
       icon: "🌐",
+      logo: "/experience/mindata-logo.svg",
       color: "blue" as const,
       projects: [
         {
@@ -87,6 +88,7 @@ export const portfolioData = {
       period: "Dic 2024 - Apr 2025",
       status: "COMPLETA" as const,
       icon: "📦",
+      logo: "/experience/caramel-point.png",
       color: "pink" as const,
       projects: [
         {
