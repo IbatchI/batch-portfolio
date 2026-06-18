@@ -37,17 +37,17 @@
       },
       {
         "company": "Midas Consultores",
-        "role": "Team Lead Frontend · Arquitectura · Clean Code",
+        "role": "Team Lead Frontend · React · Next",
         "period": "May 2021 - Abr 2026"
       },
       {
         "company": "Caramel Point",
-        "role": "Frontend · React · Next.js · Web3 · Mobile",
+        "role": "Frontend · React · Next · React Native",
         "period": "Dic 2024 - Apr 2025"
       },
       {
         "company": "Agripay",
-        "role": "Frontend · Angular · E2E · Decisiones Técnicas",
+        "role": "Frontend · Angular",
         "period": "Sep 2021 - May 2022"
       }
     ],
@@ -66,7 +66,7 @@
       },
       "CGI Capital Platform": {
         "name": "CGI Capital — Investment Platform",
-        "description": "Plataforma interna para gestión de portfolios de inversión. Selector multi-comitente, breakdown de portfolio por tipo de activo en tiempo real, historial de transacciones paginado, soporte multi-moneda (MEP, USD, ARS), y reportes descargables de inversiones/movimientos."
+        "description": "Plataforma interna para gestión de portfolios de inversión. Selector multi-comitente, breakdown de portfolio por tipo de activo en tiempo real, historial de transacciones paginado y soporte multi-moneda (MEP, USD, ARS)."
       },
       "Midas Filters Commerce": {
         "name": "Catalogo de Filtros eCommerce",
@@ -74,7 +74,7 @@
       },
       "EDEMSA Contratistas": {
         "name": "EDEMSA Contratistas — Feature Transversal",
-        "description": "Fui responsable de construir una feature transversal para la plataforma de contratistas de EDEMSA, con impacto en múltiples módulos y foco en formularios complejos. Implementé validaciones de negocio avanzadas, flujos por rol, integración con múltiples servicios backend y manejo de archivos, asegurando consistencia funcional, mantenibilidad y escalabilidad en toda la aplicación."
+        "description": "Lideré el desarrollo frontend de una feature transversal para la plataforma de contratistas de EDEMSA, con impacto en múltiples módulos y foco en formularios complejos. Implementé flujos por rol, patrones de componentes reutilizables y manejo robusto de errores asíncronos, priorizando mantenibilidad y escalabilidad en toda la aplicación."
       },
       "Mobile App": {
         "name": "App Mobile",

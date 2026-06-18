@@ -40,7 +40,7 @@ export const portfolioData = {
           name: "RIU Hotels Website",
           url: "https://www.riu.com/es",
           achievements: ["i18n", "performance", "codeStandards", "featureArchitecture"],
-          tech: ["Angular", "TypeScript"],
+          tech: ["Angular", "TypeScript", "Jest"],
         },
       ],
     },
@@ -61,24 +61,24 @@ export const portfolioData = {
         {
           name: "CGI Capital Landing",
           url: "https://www.cgi-capital.com/en",
-          achievements: ["i18n", "animations", "performance", "formValidation", "codeQuality"],
+          achievements: ["teamLeadership", "i18n", "animations", "performance", "formValidation", "codeQuality"],
           tech: ["Next.js", "TypeScript", "Framer Motion", "i18next", "Zod", "React Hook Form", "shadcn/ui", "SonarQube"],
         },
         {
           name: "CGI Capital Platform",
           url: "https://plataforma.cgi-capital.com",
-          achievements: ["dashboardArchitecture", "rbacMiddleware", "multiCurrency", "reportDownloads", "mobileDetection"],
+          achievements: ["dashboardArchitecture", "rbacMiddleware", "multiCurrency", "teamLeadership", "mobileDetection"],
           tech: ["Next.js 14", "TypeScript", "TanStack Query", "TanStack Table", "NextAuth", "shadcn/ui", "Recharts", "Zod", "Vitest"],
         },
         {
           name: "Midas Filters Commerce",
-          achievements: ["e2eLeadership", "reengineering", "featureArchitecture", "codeStandards", "authRbac", "cartCheckout", "stockControl", "codeQuality", "sprintPlanning", "clientCommunication"],
-          tech: ["React", "TypeScript", "Vite", "React Router", "Tailwind CSS", "Radix UI", "TanStack Query", "TanStack Table", "Zustand", "Axios", "React Hook Form", "Zod", "Vitest", "Testing Library", "SonarQube", "Husky", "ESLint", "Prettier", "Screaming Architecture", "Scrum"],
+          achievements: ["teamLeadership", "e2eLeadership", "reengineering", "featureArchitecture", "codeStandards", "authRbac", "cartCheckout", "stockControl", "codeQuality", "sprintPlanning", "clientCommunication"],
+          tech: ["React", "TypeScript", "Tailwind CSS", "shadcn/ui", "TanStack Query", "TanStack Table", "Zustand", "Axios", "React Hook Form", "Zod", "Vitest", "Testing Library", "Husky", "Screaming Architecture", "Scrum"],
         },
         {
           name: "EDEMSA Contratistas",
-          achievements: ["crossFeature", "complexForms", "businessValidations", "multipartIntegration", "multiEndpoint", "roleBasedFlows", "uxConsistency", "componentReuse", "asyncErrorHandling"],
-          tech: ["React 18", "React Router DOM 6", "Material UI", "Axios", "Formik", "Yup", "React Table", "date-fns", "Sass", "Styled Components", "Zustand", "ESLint", "Stylelint", "Husky"],
+          achievements: ["crossFeature", "complexForms", "roleBasedFlows", "componentReuse", "asyncErrorHandling", "teamLeadership"],
+          tech: ["React", "Material UI", "Axios", "Formik", "Yup", "React Table", "date-fns", "Sass", "Styled Components", "Zustand", "Husky"],
         },
       ],
     },
@@ -93,7 +93,7 @@ export const portfolioData = {
       projects: [
         {
           name: "UP App",
-          achievements: ["mobileFromScratch", "tiktokUx", "curatedFeed", "scalableMobileArch", "videoStreaming", "multiProfileOnboarding", "i18n", "localPersistence", "observability", "metaAudit"],
+          achievements: ["mobileFromScratch", "scalableMobileArch", "videoStreaming", "multiProfileOnboarding", "i18n", "localPersistence", "observability", "metaAudit"],
           tech: ["Expo", "React Native", "TypeScript", "Expo Router", "TanStack Query", "Zustand", "React Hook Form", "i18next", "react-native-mmkv", "react-native-reanimated", "react-native-gesture-handler", "react-native-video", "Mux", "Sentry", "Jest", "React Native Testing Library"],
         },
         {

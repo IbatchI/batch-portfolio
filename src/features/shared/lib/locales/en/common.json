@@ -37,17 +37,17 @@
       },
       {
         "company": "Midas Consultores",
-        "role": "Frontend Team Lead · Architecture · Clean Code",
+        "role": "Frontend Team Lead · React · Next",
         "period": "May 2021 - Apr 2026"
       },
       {
         "company": "Caramel Point",
-        "role": "Frontend · React · Next.js · Web3 · Mobile",
+        "role": "Frontend · React · Next · React Native",
         "period": "Dec 2024 - Apr 2025"
       },
       {
         "company": "Agripay",
-        "role": "Frontend · Angular · E2E · Technical Decisions",
+        "role": "Frontend · Angular",
         "period": "Sep 2021 - May 2022"
       }
     ],
@@ -66,7 +66,7 @@
       },
       "CGI Capital Platform": {
         "name": "CGI Capital — Investment Platform",
-        "description": "Internal web platform for investment portfolio management. Multi-comitente account selector, real-time portfolio breakdown by asset type, paginated transaction history, multi-currency support (MEP, USD, ARS), and downloadable investment/movement reports."
+        "description": "Internal web platform for investment portfolio management. Multi-comitente account selector, real-time portfolio breakdown by asset type, paginated transaction history, and multi-currency support (MEP, USD, ARS)."
       },
       "Midas Filters Commerce": {
         "name": "Filters eCommerce Catalog",
@@ -74,7 +74,7 @@
       },
       "EDEMSA Contratistas": {
         "name": "EDEMSA Contractors — Cross-cutting Feature",
-        "description": "I was responsible for building a cross-cutting feature for EDEMSA's contractor platform, impacting multiple business modules with a strong focus on complex forms. I implemented advanced business validations, role-based flows, multi-endpoint backend integration, and file handling, ensuring functional consistency, maintainability, and scalability across the application."
+        "description": "I led the frontend development of a cross-cutting feature for EDEMSA's contractor platform, impacting multiple business modules with a focus on complex forms. I implemented role-based flows, reusable component patterns, and robust async/error handling, ensuring maintainability and scalability across the application."
       },
       "Mobile App": {
         "name": "Mobile App",
