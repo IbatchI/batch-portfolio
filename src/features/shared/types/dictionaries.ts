@@ -4,10 +4,71 @@ export interface JobEntry {
   period: string;
 }
 
+export interface ProjectEntry {
+  name: string;
+  description: string;
+}
+
+export interface AchievementLabels {
+  teamLeadership: string;
+  clientCommunication: string;
+  sprintPlanning: string;
+  reengineering: string;
+  i18n: string;
+  animations: string;
+  performance: string;
+  monorepo: string;
+  mobile: string;
+  testing: string;
+  cicd: string;
+  formValidation: string;
+  containerization: string;
+  codeQuality: string;
+  dashboardArchitecture: string;
+  rbacMiddleware: string;
+  multiCurrency: string;
+  reportDownloads: string;
+  mobileDetection: string;
+  e2eLeadership: string;
+  featureArchitecture: string;
+  codeStandards: string;
+  authRbac: string;
+  cartCheckout: string;
+  stockControl: string;
+  crossFeature: string;
+  complexForms: string;
+  businessValidations: string;
+  multipartIntegration: string;
+  multiEndpoint: string;
+  roleBasedFlows: string;
+  uxConsistency: string;
+  componentReuse: string;
+  asyncErrorHandling: string;
+  mobileFromScratch: string;
+  tiktokUx: string;
+  curatedFeed: string;
+  scalableMobileArch: string;
+  videoStreaming: string;
+  multiProfileOnboarding: string;
+  localPersistence: string;
+  observability: string;
+  metaAudit: string;
+  scrollStorytelling: string;
+  heroImplementation: string;
+  crossRepoConsistency: string;
+  cmsIntegration: string;
+  animationSystems: string;
+}
+
 export interface EducationEntry {
   title: string;
   institution: string;
   period: string;
+}
+
+export interface SkillEntry {
+  type: string;
+  description: string;
 }
 
 export interface Dictionary {
@@ -40,12 +101,18 @@ export interface Dictionary {
     statusActive: string;
     statusComplete: string;
     jobs: JobEntry[];
+    projects: Record<string, ProjectEntry>;
+    achievements: AchievementLabels;
+    lootObtained: string;
+    achievementsUnlocked: string;
   };
   skills: {
     title: string;
     level: string;
     frontend: string;
     toolsAndBackend: string;
+    hint: string;
+    catalog: Record<string, SkillEntry>;
   };
   education: {
     codex: string;

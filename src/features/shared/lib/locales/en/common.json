@@ -27,29 +27,147 @@
     "questLog": "QUEST LOG — MISSIONS",
     "statusActive": "ACTIVE",
     "statusComplete": "COMPLETE",
+    "lootObtained": "// LOOT OBTAINED",
+    "achievementsUnlocked": "// ACHIEVEMENTS UNLOCKED",
     "jobs": [
       {
+        "company": "Mindata",
+        "role": "Senior Frontend · Angular",
+        "period": "May 2026 - Present"
+      },
+      {
         "company": "Midas Consultores",
-        "role": "Leadership, micro-frontends, clean code",
-        "period": "May 2021 - Present"
+        "role": "Frontend Team Lead · React · Next",
+        "period": "May 2021 - Apr 2026"
       },
       {
         "company": "Caramel Point",
-        "role": "React Native · monorepo · mobile",
+        "role": "Frontend · React · Next · React Native",
         "period": "Dec 2024 - Apr 2025"
       },
       {
         "company": "Agripay",
-        "role": "TypeScript · Cypress · CI/CD",
+        "role": "Frontend · Angular",
         "period": "Sep 2021 - May 2022"
       }
-    ]
+    ],
+    "projects": {
+      "RIU Hotels Website": {
+        "name": "RIU Hotels & Resorts — Official Website",
+        "description": "Mindata is a digital services consultancy with an agile approach and distributed teams. As a senior frontend developer in Angular, I work on the official RIU Hotels & Resorts website (riu.com/es): a high-traffic, multilingual site for a global hotel chain, with a focus on code quality, frontend architecture, and user experience at scale."
+      },
+      "YClick": {
+        "name": "YClick (YPF)",
+        "description": "Ambitious YPF project. Frontend Team Leader. Responsibilities: implementing solutions, sprint planning, task distribution, client communication, estimations. Led the project re-engineering."
+      },
+      "CGI Capital Landing": {
+        "name": "CGI Capital Landing",
+        "description": "Corporate landing with 95+ Lighthouse score. Full i18n (es/en) with middleware-based locale detection. Form validation with Zod + React Hook Form."
+      },
+      "CGI Capital Platform": {
+        "name": "CGI Capital — Investment Platform",
+        "description": "Internal web platform for investment portfolio management. Multi-comitente account selector, real-time portfolio breakdown by asset type, paginated transaction history, and multi-currency support (MEP, USD, ARS)."
+      },
+      "Midas Filters Commerce": {
+        "name": "Filters eCommerce Catalog",
+        "description": "I led from scratch the reengineering of an automotive filters/spare-parts eCommerce, defining frontend architecture, engineering standards, and delivery roadmap. We implemented robust auth, access control, catalog, stock control, cart and checkout flow, with a strong focus on scalability, maintainability, and code quality."
+      },
+      "EDEMSA Contratistas": {
+        "name": "EDEMSA Contractors — Cross-cutting Feature",
+        "description": "I led the frontend development of a cross-cutting feature for EDEMSA's contractor platform, impacting multiple business modules with a focus on complex forms. I implemented role-based flows, reusable component patterns, and robust async/error handling, ensuring maintainability and scalability across the application."
+      },
+      "Mobile App": {
+        "name": "Mobile App",
+        "description": "Cross-platform mobile application with monorepo architecture."
+      },
+      "UP App": {
+        "name": "UP App — Kids Content Platform",
+        "description": "I helped build from scratch a cross-platform mobile app inspired by TikTok, focused on curated content for kids. We built it on a solid Expo + React Native foundation, integrating video feed experiences, multi-profile onboarding, authentication, local persistence, i18n, and observability tooling. The product reached an advanced stage and received very positive feedback during an audit conducted by former Meta engineers."
+      },
+      "Core DAO Ecosystem": {
+        "name": "Core DAO — Web Ecosystem",
+        "description": "Multifaceted project across Core DAO's web ecosystem (Bitcoin DeFi blockchain). I redesigned the coredao.org homepage as a scroll storytelling experience: full-viewport sections, GSAP + Lenis + ScrollTrigger animations, Spline 3D hero, and live on-chain metrics. I also worked on stake.coredao.org (landing + staking dApp), bridge.coredao.org (cross-chain bridge), and other organization properties, maintaining visual and animation consistency across repos."
+      },
+      "Agripay Back Office": {
+        "name": "Agripay — Back Office",
+        "description": "Agripay is a Pampas-born fintech with 30+ years of agro experience: they created the world's first non-monetary wallet to turn grains into transactional currency. I joined the Angular frontend team, making technical decisions and setting up E2E testing with Cypress from scratch. We built the web back office with functional parity to the mobile app, digitizing the agro payment circuit alongside mobile and backend teams. agripay.ar is a company reference; the landing page was outside my scope."
+      }
+    },
+    "achievements": {
+      "teamLeadership": "Team Leadership",
+      "clientCommunication": "Client Communication",
+      "sprintPlanning": "Sprint Planning",
+      "reengineering": "Re-engineering",
+      "i18n": "Internationalization",
+      "animations": "Animations",
+      "performance": "Performance",
+      "monorepo": "Monorepo",
+      "mobile": "Mobile Dev",
+      "testing": "Testing",
+      "cicd": "CI/CD",
+      "formValidation": "Form Validation",
+      "containerization": "Containerization",
+      "codeQuality": "Code Quality",
+      "dashboardArchitecture": "Dashboard Architecture",
+      "rbacMiddleware": "RBAC Middleware",
+      "multiCurrency": "Multi-Currency",
+      "reportDownloads": "Report Downloads",
+      "mobileDetection": "Mobile Detection",
+      "e2eLeadership": "E2E Tech Leadership",
+      "featureArchitecture": "Feature Architecture",
+      "codeStandards": "Code Standards",
+      "authRbac": "Auth & RBAC",
+      "cartCheckout": "Cart + Checkout",
+      "stockControl": "Stock Control",
+      "crossFeature": "Cross-cutting Feature",
+      "complexForms": "Complex Forms Architecture",
+      "businessValidations": "Business Validations",
+      "multipartIntegration": "Multipart Integration",
+      "multiEndpoint": "Multi-endpoint Integration",
+      "roleBasedFlows": "Role-based Flows",
+      "uxConsistency": "UX/UI Consistency",
+      "componentReuse": "Component Reusability",
+      "asyncErrorHandling": "Async Error Handling",
+      "mobileFromScratch": "Mobile App From Scratch",
+      "tiktokUx": "TikTok-style UX",
+      "curatedFeed": "Curated Content Feed",
+      "scalableMobileArch": "Scalable Mobile Architecture",
+      "videoStreaming": "Video Streaming Integration",
+      "multiProfileOnboarding": "Multi-profile Onboarding",
+      "localPersistence": "Local Persistence",
+      "observability": "Observability & Monitoring",
+      "metaAudit": "Meta Engineers Audit",
+      "scrollStorytelling": "Scroll Storytelling",
+      "animationSystems": "Animation Systems",
+      "heroImplementation": "Hero & Interactive 3D",
+      "cmsIntegration": "CMS Integration (Strapi)",
+      "crossRepoConsistency": "Cross-repo Consistency"
+    }
   },
   "skills": {
-    "title": "× INVENTORY — LUCAS.EXE",
+    "title": "× SKILLS — LUCAS.EXE",
     "level": "LVL 6 · FRONTEND KNIGHT",
     "frontend": "// FRONTEND",
-    "toolsAndBackend": "// TOOLS & BACKEND"
+    "toolsAndBackend": "// TOOLS & BACKEND",
+    "hint": "Hover a skill to inspect it",
+    "catalog": {
+      "react": { "type": "FRONTEND MAGIC", "description": "An ancient framework for crafting reactive user interfaces. Wield with precision." },
+      "nextjs": { "type": "FULLSTACK FRAMEWORK", "description": "React's battle-tested companion. SSR, RSC and routing forged into one blade." },
+      "typescript": { "type": "TYPE SORCERY", "description": "Adds a protective layer of types over JavaScript. Repels runtime demons." },
+      "javascript": { "type": "CORE LANGUAGE", "description": "The primordial tongue of the web. Powers every artifact in the realm." },
+      "tailwind": { "type": "STYLING ARTS", "description": "Utility-first styling incantations. Design at the speed of thought." },
+      "git": { "type": "VERSION CONTROL", "description": "A time-travel relic. Branch, merge and rewind history at will." },
+      "github": { "type": "GUILD PLATFORM", "description": "The great hall where code is shared, reviewed and shipped." },
+      "gitlab": { "type": "GUILD PLATFORM", "description": "Fortress of CI/CD pipelines and self-hosted repositories." },
+      "reactNative": { "type": "MOBILE MAGIC", "description": "Cast React spells onto iOS and Android from a single codebase." },
+      "storybook": { "type": "COMPONENT FORGE", "description": "An isolated workshop for building and testing UI components." },
+      "testingLibrary": { "type": "QUALITY WARD", "description": "Tests components the way users actually use them. Guards against regressions." },
+      "vitest": { "type": "QUALITY WARD", "description": "A blazing-fast test runner. Slays bugs before they escape to production." },
+      "reactQuery": { "type": "DATA SUMMONING", "description": "Fetches, caches and syncs server state. Async chaos, tamed." },
+      "zustand": { "type": "STATE KEEPER", "description": "A tiny, fearless bear that guards your global state." },
+      "zod": { "type": "SCHEMA GUARDIAN", "description": "Validates and parses data at the gates. Nothing malformed passes." },
+      "reactHookForm": { "type": "FORM CRAFT", "description": "Performant forms with minimal re-renders. Validation woven in." }
+    }
   },
   "education": {
     "codex": "// CODEX ENTRIES DISCOVERED",
@@ -76,7 +194,7 @@
   "konami": {
     "title": "KONAMI CODE ACTIVATED!",
     "subtitle": "+30 LIVES · GOD MODE ENABLED",
-    "secret": "You found a secret! 🎮"
+    "secret": "You found a secret!"
   },
   "meta": {
     "title": "LUCAS.EXE | Frontend Developer",

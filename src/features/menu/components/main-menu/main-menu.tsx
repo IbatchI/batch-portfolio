@@ -9,7 +9,7 @@ const INACTIVE_INDICATOR = " ";
 
 const GAME_LABELS: Record<MenuSection, string> = {
   about: "NEW GAME",
-  experience: "LOAD GAME",
+  experience: "QUEST LOG",
   skills: "INVENTORY",
   education: "CODEX",
   contact: "CONTACT",

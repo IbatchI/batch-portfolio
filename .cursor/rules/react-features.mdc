@@ -1,0 +1,36 @@
+---
+description: React component patterns for src/features
+globs: src/features/**/*.tsx
+alwaysApply: false
+---
+
+# React components in features
+
+## One export per file
+
+App components under `src/features/` export a single component. Private helpers (e.g. `getBarColorClassName`) may stay in the same file.
+
+## Subcomponents
+
+If a file grows multiple React components, extract them to sibling files in the same `components/` folder:
+
+```tsx
+// skills-content.tsx — orchestrator
+import { SkillBar } from "./skill-bar";
+
+// experience-content.tsx — orchestrator
+import { TechIcon } from "./tech-icon";
+import { ExperienceCompanyIcon } from "./experience-company-icon";
+```
+
+## Portfolio data vs i18n
+
+- Structure (projects, tech, achievements keys, URLs): `src/features/shared/lib/portfolio-data.ts`
+- User-facing text (ES/EN): `src/features/shared/lib/locales/{es,en}/common.json`
+- Types: `src/features/shared/types/dictionaries.ts`
+
+## React patterns
+
+- Hoist static maps and JSX nodes at module level, not inside render functions.
+- Use stable keys in `.map()` (`project.name`, `achievement`, `tech`), not array indices.
+- Prefer `"use client"` only where hooks or interactivity are needed.
