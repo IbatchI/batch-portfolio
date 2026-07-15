@@ -145,10 +145,29 @@
     }
   },
   "skills": {
-    "title": "× INVENTORY — LUCAS.EXE",
+    "title": "× SKILLS — LUCAS.EXE",
     "level": "LVL 6 · FRONTEND KNIGHT",
     "frontend": "// FRONTEND",
-    "toolsAndBackend": "// TOOLS & BACKEND"
+    "toolsAndBackend": "// TOOLS & BACKEND",
+    "hint": "Pasá el cursor sobre una skill para inspeccionarla",
+    "catalog": {
+      "react": { "type": "MAGIA FRONTEND", "description": "Un antiguo framework para forjar interfaces reactivas. Empuñalo con precisión." },
+      "nextjs": { "type": "FRAMEWORK FULLSTACK", "description": "El compañero de batalla de React. SSR, RSC y routing forjados en una sola hoja." },
+      "typescript": { "type": "HECHICERÍA DE TIPOS", "description": "Añade una capa protectora de tipos sobre JavaScript. Repele demonios en runtime." },
+      "javascript": { "type": "LENGUAJE BASE", "description": "La lengua primordial de la web. Impulsa cada artefacto del reino." },
+      "tailwind": { "type": "ARTES DE ESTILO", "description": "Conjuros de estilos utility-first. Diseñá a la velocidad del pensamiento." },
+      "git": { "type": "CONTROL DE VERSIONES", "description": "Una reliquia de viaje en el tiempo. Ramificá, uní y rebobiná la historia a voluntad." },
+      "github": { "type": "PLATAFORMA DE GREMIO", "description": "El gran salón donde el código se comparte, revisa y despacha." },
+      "gitlab": { "type": "PLATAFORMA DE GREMIO", "description": "Fortaleza de pipelines CI/CD y repositorios self-hosted." },
+      "reactNative": { "type": "MAGIA MÓVIL", "description": "Lanzá hechizos de React sobre iOS y Android desde un solo código." },
+      "storybook": { "type": "FRAGUA DE COMPONENTES", "description": "Un taller aislado para construir y probar componentes de UI." },
+      "testingLibrary": { "type": "GUARDIA DE CALIDAD", "description": "Prueba componentes como los usa el usuario real. Protege contra regresiones." },
+      "vitest": { "type": "GUARDIA DE CALIDAD", "description": "Un test runner ultrarrápido. Elimina bugs antes de que lleguen a producción." },
+      "reactQuery": { "type": "INVOCACIÓN DE DATOS", "description": "Obtiene, cachea y sincroniza estado del servidor. El caos async, domado." },
+      "zustand": { "type": "GUARDIÁN DE ESTADO", "description": "Un osito pequeño y valiente que custodia tu estado global." },
+      "zod": { "type": "GUARDIÁN DE ESQUEMAS", "description": "Valida y parsea datos en la puerta. Nada malformado pasa." },
+      "reactHookForm": { "type": "ARTE DE FORMULARIOS", "description": "Formularios performantes con mínimos re-renders. Validación entretejida." }
+    }
   },
   "education": {
     "codex": "// ENTRADAS DEL CODEX DESCUBIERTAS",

@@ -26,6 +26,25 @@ export const portfolioData = {
     ],
   },
 
+  skillsCatalog: [
+    { id: "react", name: "React", icon: "/skills/react.svg" },
+    { id: "nextjs", name: "Next.js", icon: "/skills/nextjs.svg", invert: true },
+    { id: "typescript", name: "TypeScript", icon: "/skills/typescript.svg" },
+    { id: "javascript", name: "JavaScript", icon: "/skills/javascript.svg" },
+    { id: "tailwind", name: "Tailwind CSS", icon: "/skills/tailwind.svg" },
+    { id: "git", name: "Git", icon: "/skills/git.svg" },
+    { id: "github", name: "GitHub", icon: "/skills/github.svg" },
+    { id: "gitlab", name: "GitLab", icon: "/skills/gitlab.svg" },
+    { id: "reactNative", name: "React Native", icon: "/skills/reactnative.svg" },
+    { id: "storybook", name: "Storybook", icon: "/skills/storybook.svg" },
+    { id: "testingLibrary", name: "React Testing Library", icon: "/skills/testing-library.svg" },
+    { id: "vitest", name: "Vitest", icon: "/skills/vitest.svg" },
+    { id: "reactQuery", name: "React Query", icon: "/skills/react-query.svg" },
+    { id: "zustand", name: "Zustand", icon: "/skills/zustand.png" },
+    { id: "zod", name: "Zod", icon: "/skills/zod.svg" },
+    { id: "reactHookForm", name: "React Hook Form", icon: "/skills/react-hook-form.svg" },
+  ] as const,
+
   experience: [
     {
       company: "Mindata",

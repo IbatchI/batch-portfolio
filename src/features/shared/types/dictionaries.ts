@@ -66,6 +66,11 @@ export interface EducationEntry {
   period: string;
 }
 
+export interface SkillEntry {
+  type: string;
+  description: string;
+}
+
 export interface Dictionary {
   boot: {
     initializing: string;
@@ -106,6 +111,8 @@ export interface Dictionary {
     level: string;
     frontend: string;
     toolsAndBackend: string;
+    hint: string;
+    catalog: Record<string, SkillEntry>;
   };
   education: {
     codex: string;

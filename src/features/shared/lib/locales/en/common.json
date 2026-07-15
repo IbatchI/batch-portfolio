@@ -145,10 +145,29 @@
     }
   },
   "skills": {
-    "title": "× INVENTORY — LUCAS.EXE",
+    "title": "× SKILLS — LUCAS.EXE",
     "level": "LVL 6 · FRONTEND KNIGHT",
     "frontend": "// FRONTEND",
-    "toolsAndBackend": "// TOOLS & BACKEND"
+    "toolsAndBackend": "// TOOLS & BACKEND",
+    "hint": "Hover a skill to inspect it",
+    "catalog": {
+      "react": { "type": "FRONTEND MAGIC", "description": "An ancient framework for crafting reactive user interfaces. Wield with precision." },
+      "nextjs": { "type": "FULLSTACK FRAMEWORK", "description": "React's battle-tested companion. SSR, RSC and routing forged into one blade." },
+      "typescript": { "type": "TYPE SORCERY", "description": "Adds a protective layer of types over JavaScript. Repels runtime demons." },
+      "javascript": { "type": "CORE LANGUAGE", "description": "The primordial tongue of the web. Powers every artifact in the realm." },
+      "tailwind": { "type": "STYLING ARTS", "description": "Utility-first styling incantations. Design at the speed of thought." },
+      "git": { "type": "VERSION CONTROL", "description": "A time-travel relic. Branch, merge and rewind history at will." },
+      "github": { "type": "GUILD PLATFORM", "description": "The great hall where code is shared, reviewed and shipped." },
+      "gitlab": { "type": "GUILD PLATFORM", "description": "Fortress of CI/CD pipelines and self-hosted repositories." },
+      "reactNative": { "type": "MOBILE MAGIC", "description": "Cast React spells onto iOS and Android from a single codebase." },
+      "storybook": { "type": "COMPONENT FORGE", "description": "An isolated workshop for building and testing UI components." },
+      "testingLibrary": { "type": "QUALITY WARD", "description": "Tests components the way users actually use them. Guards against regressions." },
+      "vitest": { "type": "QUALITY WARD", "description": "A blazing-fast test runner. Slays bugs before they escape to production." },
+      "reactQuery": { "type": "DATA SUMMONING", "description": "Fetches, caches and syncs server state. Async chaos, tamed." },
+      "zustand": { "type": "STATE KEEPER", "description": "A tiny, fearless bear that guards your global state." },
+      "zod": { "type": "SCHEMA GUARDIAN", "description": "Validates and parses data at the gates. Nothing malformed passes." },
+      "reactHookForm": { "type": "FORM CRAFT", "description": "Performant forms with minimal re-renders. Validation woven in." }
+    }
   },
   "education": {
     "codex": "// CODEX ENTRIES DISCOVERED",
